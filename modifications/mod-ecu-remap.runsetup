@@ -1,0 +1,27 @@
+{
+  "orf": "1.3",
+  "kind": "modification",
+  "id": "mod-ecu-remap",
+  "version": 1,
+  "name": {
+    "en": "Engine remap",
+    "es": "Reprogramación de la centralita",
+    "ja": "ECU書き換え"
+  },
+  "operations": [
+    {
+      "op": "change",
+      "key": "x-engine-map",
+      "description": {
+        "name": {
+          "en": "Engine map",
+          "es": "Mapa motor",
+          "ja": "エンジンマップ"
+        },
+        "type": "text",
+        "scope": "single",
+        "group": "electronics"
+      }
+    }
+  ]
+}

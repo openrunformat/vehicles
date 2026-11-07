@@ -1,0 +1,29 @@
+{
+  "orf": "1.3",
+  "kind": "template",
+  "id": "generic-street",
+  "version": 1,
+  "name": {
+    "en": "Street (generic)",
+    "es": "Calle (genérica)",
+    "ja": "ストリート（汎用）"
+  },
+  "parameters": {
+    "tyre_pressure_cold": {},
+    "tyre_pressure_hot": {},
+    "camber": {},
+    "toe": {},
+    "tyres": {},
+    "fuel_mass": {},
+    "x-note": {
+      "name": {
+        "en": "Note",
+        "es": "Nota",
+        "ja": "メモ"
+      },
+      "type": "text",
+      "scope": "single",
+      "group": "other"
+    }
+  }
+}

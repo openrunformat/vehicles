@@ -1,0 +1,36 @@
+{
+  "orf": "1.3",
+  "kind": "modification",
+  "id": "mod-coilover-4way",
+  "version": 1,
+  "name": {
+    "en": "Coilovers, 4-way dampers",
+    "es": "Suspensión roscada, amortiguadores de 4 vías",
+    "ja": "車高調（4WAY減衰力調整）"
+  },
+  "operations": [
+    {
+      "op": "remove",
+      "key": "x-suspension"
+    },
+    {
+      "op": "add",
+      "key": "ride_height"
+    },
+    {
+      "op": "add",
+      "key": "spring_rate"
+    },
+    {
+      "op": "add",
+      "key": "damper_click_reference"
+    },
+    {
+      "op": "damperWays",
+      "ways": {
+        "front": 4,
+        "rear": 4
+      }
+    }
+  ]
+}

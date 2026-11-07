@@ -1,0 +1,21 @@
+{
+  "orf": "1.3",
+  "kind": "modification",
+  "id": "mod-camber-plates",
+  "version": 1,
+  "name": {
+    "en": "Camber plates",
+    "es": "Copelas de caída regulable",
+    "ja": "キャンバー調整式アッパーマウント"
+  },
+  "operations": [
+    {
+      "op": "add",
+      "key": "caster"
+    },
+    {
+      "op": "add",
+      "key": "camber"
+    }
+  ]
+}

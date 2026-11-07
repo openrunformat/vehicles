@@ -1,0 +1,17 @@
+{
+  "orf": "1.3",
+  "kind": "modification",
+  "id": "mod-brake-bias",
+  "version": 1,
+  "name": {
+    "en": "Brake bias adjuster",
+    "es": "Repartidor de frenada regulable",
+    "ja": "ブレーキバランサー"
+  },
+  "operations": [
+    {
+      "op": "add",
+      "key": "brake_bias"
+    }
+  ]
+}

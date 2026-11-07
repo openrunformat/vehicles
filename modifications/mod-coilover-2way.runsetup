@@ -1,0 +1,36 @@
+{
+  "orf": "1.3",
+  "kind": "modification",
+  "id": "mod-coilover-2way",
+  "version": 1,
+  "name": {
+    "en": "Coilovers, 2-way dampers",
+    "es": "Suspensión roscada, amortiguadores de 2 vías",
+    "ja": "車高調（2WAY減衰力調整）"
+  },
+  "operations": [
+    {
+      "op": "remove",
+      "key": "x-suspension"
+    },
+    {
+      "op": "add",
+      "key": "ride_height"
+    },
+    {
+      "op": "add",
+      "key": "spring_rate"
+    },
+    {
+      "op": "add",
+      "key": "damper_click_reference"
+    },
+    {
+      "op": "damperWays",
+      "ways": {
+        "front": 2,
+        "rear": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-07T10:22:07Z",
+  "source": "https://github.com/openrunformat/vehicles",
+  "licence": "CC0-1.0",
+  "models": [
+    {
+      "id": "honda/civic",
+      "uid": "01a1b586-bd43-7af7-b02f-d87e45b245eb",
+      "make": {
+        "id": "honda",
+        "name": "Honda",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q9584",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "Civic",
+      "names": {
+        "en": "Civic",
+        "es": "Civic",
+        "ja": "シビック"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q216747",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "type-r",
+          "name": "Type R",
+          "names": {
+            "en": "Type R",
+            "es": "Type R",
+            "ja": "TYPE R"
+          },
+          "generations": [
+            {
+              "id": "fl5",
+              "fullId": "honda/civic/type-r@fl5",
+              "uid": "01a1b586-c2e5-7495-b52d-74075ca3cc53",
+              "name": "FL5",
+              "names": {
+                "en": "FL5",
+                "es": "FL5",
+                "ja": "FL5"
+              },
+              "years": {
+                "from": 2022,
+                "to": null
+              },
+              "stock": {
+                "boltPattern": "5x120",
+                "hubBoreMm": 64.1,
+                "wheelDiameterIn": 19,
+                "driveModes": [
+                  {
+                    "id": "comfort",
+                    "name": {
+                      "en": "Comfort",
+                      "es": "Comfort",
+                      "ja": "COMFORT"
+                    }
+                  },
+                  {
+                    "id": "sport",
+                    "name": {
+                      "en": "Sport",
+                      "es": "Sport",
+                      "ja": "SPORT"
+                    }
+                  },
+                  {
+                    "id": "plus_r",
+                    "name": {
+                      "en": "+R",
+                      "es": "+R",
+                      "ja": "+R"
+                    }
+                  },
+                  {
+                    "id": "individual",
+                    "name": {
+                      "en": "Individual",
+                      "es": "Individual",
+                      "ja": "INDIVIDUAL"
+                    }
+                  }
+                ]
+              },
+              "template": "honda-civic-type-r-fl5"
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    }
+  ],
+  "templates": [
+    {
+      "id": "generic-street",
+      "version": 1,
+      "name": {
+        "en": "Street (generic)",
+        "es": "Calle (genérica)",
+        "ja": "ストリート（汎用）"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "template",
+        "id": "generic-street",
+        "version": 1,
+        "name": {
+          "en": "Street (generic)",
+          "es": "Calle (genérica)",
+          "ja": "ストリート（汎用）"
+        },
+        "parameters": {
+          "tyre_pressure_cold": {},
+          "tyre_pressure_hot": {},
+          "camber": {},
+          "toe": {},
+          "tyres": {},
+          "fuel_mass": {},
+          "x-note": {
+            "name": {
+              "en": "Note",
+              "es": "Nota",
+              "ja": "メモ"
+            },
+            "type": "text",
+            "scope": "single",
+            "group": "other"
+          }
+        }
+      }
+    },
+    {
+      "id": "generic-track",
+      "version": 1,
+      "name": {
+        "en": "Track (generic)",
+        "es": "Circuito (genérica)",
+        "ja": "サーキット（汎用）"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "template",
+        "id": "generic-track",
+        "version": 1,
+        "name": {
+          "en": "Track (generic)",
+          "es": "Circuito (genérica)",
+          "ja": "サーキット（汎用）"
+        },
+        "parameters": {
+          "tyre_pressure_cold": {},
+          "tyre_pressure_hot": {},
+          "camber": {},
+          "toe": {},
+          "tyres": {},
+          "fuel_mass": {},
+          "caster": {},
+          "brake_bias": {},
+          "ballast_mass": {},
+          "driver_mass": {},
+          "x-note": {
+            "name": {
+              "en": "Note",
+              "es": "Nota",
+              "ja": "メモ"
+            },
+            "type": "text",
+            "scope": "single",
+            "group": "other"
+          }
+        }
+      }
+    },
+    {
+      "id": "honda-civic-type-r-fl5",
+      "version": 1,
+      "name": {
+        "en": "Honda Civic Type R (FL5)",
+        "es": "Honda Civic Type R (FL5)",
+        "ja": "ホンダ シビック TYPE R（FL5）"
+      },
+      "appliesTo": [
+        "honda/civic/type-r@fl5"
+      ],
+      "file": {
+        "orf": "1.3",
+        "kind": "template",
+        "id": "honda-civic-type-r-fl5",
+        "version": 1,
+        "appliesTo": [
+          "honda/civic/type-r@fl5"
+        ],
+        "name": {
+          "en": "Honda Civic Type R (FL5)",
+          "es": "Honda Civic Type R (FL5)",
+          "ja": "ホンダ シビック TYPE R（FL5）"
+        },
+        "parameters": {
+          "tyre_pressure_cold": {},
+          "tyre_pressure_hot": {},
+          "camber": {},
+          "toe": {},
+          "tyres": {},
+          "fuel_mass": {},
+          "x-note": {
+            "name": {
+              "en": "Note",
+              "es": "Nota",
+              "ja": "メモ"
+            },
+            "type": "text",
+            "scope": "single",
+            "group": "other"
+          },
+          "x-drive-mode": {
+            "name": {
+              "en": "Drive mode",
+              "es": "Modo de conducción",
+              "ja": "ドライブモード"
+            },
+            "type": "choice",
+            "scope": "single",
+            "choices": [
+              {
+                "id": "comfort",
+                "name": {
+                  "en": "Comfort",
+                  "es": "Comfort",
+                  "ja": "COMFORT"
+                }
+              },
+              {
+                "id": "sport",
+                "name": {
+                  "en": "Sport",
+                  "es": "Sport",
+                  "ja": "SPORT"
+                }
+              },
+              {
+                "id": "plus_r",
+                "name": {
+                  "en": "+R",
+                  "es": "+R",
+                  "ja": "+R"
+                }
+              },
+              {
+                "id": "individual",
+                "name": {
+                  "en": "Individual",
+                  "es": "Individual",
+                  "ja": "INDIVIDUAL"
+                }
+              }
+            ],
+            "allowOther": true,
+            "group": "electronics"
+          },
+          "x-engine-map": {
+            "name": {
+              "en": "Engine map",
+              "es": "Mapa motor",
+              "ja": "エンジンマップ"
+            },
+            "type": "choice",
+            "scope": "single",
+            "choices": [
+              {
+                "id": "stock",
+                "name": {
+                  "en": "Stock",
+                  "es": "De serie",
+                  "ja": "純正"
+                }
+              }
+            ],
+            "allowOther": true,
+            "group": "electronics"
+          },
+          "x-suspension": {
+            "name": {
+              "en": "Suspension",
+              "es": "Suspensión",
+              "ja": "サスペンション"
+            },
+            "type": "choice",
+            "scope": "single",
+            "choices": [
+              {
+                "id": "stock",
+                "name": {
+                  "en": "Stock",
+                  "es": "De serie",
+                  "ja": "純正"
+                }
+              }
+            ],
+            "allowOther": true,
+            "group": "suspension"
+          }
+        }
+      }
+    }
+  ],
+  "modifications": [
+    {
+      "id": "mod-brake-bias",
+      "version": 1,
+      "name": {
+        "en": "Brake bias adjuster",
+        "es": "Repartidor de frenada regulable",
+        "ja": "ブレーキバランサー"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "modification",
+        "id": "mod-brake-bias",
+        "version": 1,
+        "name": {
+          "en": "Brake bias adjuster",
+          "es": "Repartidor de frenada regulable",
+          "ja": "ブレーキバランサー"
+        },
+        "operations": [
+          {
+            "op": "add",
+            "key": "brake_bias"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mod-camber-plates",
+      "version": 1,
+      "name": {
+        "en": "Camber plates",
+        "es": "Copelas de caída regulable",
+        "ja": "キャンバー調整式アッパーマウント"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "modification",
+        "id": "mod-camber-plates",
+        "version": 1,
+        "name": {
+          "en": "Camber plates",
+          "es": "Copelas de caída regulable",
+          "ja": "キャンバー調整式アッパーマウント"
+        },
+        "operations": [
+          {
+            "op": "add",
+            "key": "caster"
+          },
+          {
+            "op": "add",
+            "key": "camber"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mod-coilover-1way",
+      "version": 1,
+      "name": {
+        "en": "Coilovers, 1-way dampers",
+        "es": "Suspensión roscada, amortiguadores de 1 vía",
+        "ja": "車高調（1WAY減衰力調整）"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "modification",
+        "id": "mod-coilover-1way",
+        "version": 1,
+        "name": {
+          "en": "Coilovers, 1-way dampers",
+          "es": "Suspensión roscada, amortiguadores de 1 vía",
+          "ja": "車高調（1WAY減衰力調整）"
+        },
+        "operations": [
+          {
+            "op": "remove",
+            "key": "x-suspension"
+          },
+          {
+            "op": "add",
+            "key": "ride_height"
+          },
+          {
+            "op": "add",
+            "key": "spring_rate"
+          },
+          {
+            "op": "add",
+            "key": "damper_click_reference"
+          },
+          {
+            "op": "damperWays",
+            "ways": {
+              "front": 1,
+              "rear": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "mod-coilover-2way",
+      "version": 1,
+      "name": {
+        "en": "Coilovers, 2-way dampers",
+        "es": "Suspensión roscada, amortiguadores de 2 vías",
+        "ja": "車高調（2WAY減衰力調整）"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "modification",
+        "id": "mod-coilover-2way",
+        "version": 1,
+        "name": {
+          "en": "Coilovers, 2-way dampers",
+          "es": "Suspensión roscada, amortiguadores de 2 vías",
+          "ja": "車高調（2WAY減衰力調整）"
+        },
+        "operations": [
+          {
+            "op": "remove",
+            "key": "x-suspension"
+          },
+          {
+            "op": "add",
+            "key": "ride_height"
+          },
+          {
+            "op": "add",
+            "key": "spring_rate"
+          },
+          {
+            "op": "add",
+            "key": "damper_click_reference"
+          },
+          {
+            "op": "damperWays",
+            "ways": {
+              "front": 2,
+              "rear": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "mod-coilover-3way",
+      "version": 1,
+      "name": {
+        "en": "Coilovers, 3-way dampers",
+        "es": "Suspensión roscada, amortiguadores de 3 vías",
+        "ja": "車高調（3WAY減衰力調整）"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "modification",
+        "id": "mod-coilover-3way",
+        "version": 1,
+        "name": {
+          "en": "Coilovers, 3-way dampers",
+          "es": "Suspensión roscada, amortiguadores de 3 vías",
+          "ja": "車高調（3WAY減衰力調整）"
+        },
+        "operations": [
+          {
+            "op": "remove",
+            "key": "x-suspension"
+          },
+          {
+            "op": "add",
+            "key": "ride_height"
+          },
+          {
+            "op": "add",
+            "key": "spring_rate"
+          },
+          {
+            "op": "add",
+            "key": "damper_click_reference"
+          },
+          {
+            "op": "damperWays",
+            "ways": {
+              "front": 3,
+              "rear": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "mod-coilover-4way",
+      "version": 1,
+      "name": {
+        "en": "Coilovers, 4-way dampers",
+        "es": "Suspensión roscada, amortiguadores de 4 vías",
+        "ja": "車高調（4WAY減衰力調整）"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "modification",
+        "id": "mod-coilover-4way",
+        "version": 1,
+        "name": {
+          "en": "Coilovers, 4-way dampers",
+          "es": "Suspensión roscada, amortiguadores de 4 vías",
+          "ja": "車高調（4WAY減衰力調整）"
+        },
+        "operations": [
+          {
+            "op": "remove",
+            "key": "x-suspension"
+          },
+          {
+            "op": "add",
+            "key": "ride_height"
+          },
+          {
+            "op": "add",
+            "key": "spring_rate"
+          },
+          {
+            "op": "add",
+            "key": "damper_click_reference"
+          },
+          {
+            "op": "damperWays",
+            "ways": {
+              "front": 4,
+              "rear": 4
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "mod-ecu-remap",
+      "version": 1,
+      "name": {
+        "en": "Engine remap",
+        "es": "Reprogramación de la centralita",
+        "ja": "ECU書き換え"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "modification",
+        "id": "mod-ecu-remap",
+        "version": 1,
+        "name": {
+          "en": "Engine remap",
+          "es": "Reprogramación de la centralita",
+          "ja": "ECU書き換え"
+        },
+        "operations": [
+          {
+            "op": "change",
+            "key": "x-engine-map",
+            "description": {
+              "name": {
+                "en": "Engine map",
+                "es": "Mapa motor",
+                "ja": "エンジンマップ"
+              },
+              "type": "text",
+              "scope": "single",
+              "group": "electronics"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "mod-rear-wing",
+      "version": 1,
+      "name": {
+        "en": "Adjustable rear wing",
+        "es": "Alerón trasero regulable",
+        "ja": "調整式リアウイング"
+      },
+      "appliesTo": [],
+      "file": {
+        "orf": "1.3",
+        "kind": "modification",
+        "id": "mod-rear-wing",
+        "version": 1,
+        "name": {
+          "en": "Adjustable rear wing",
+          "es": "Alerón trasero regulable",
+          "ja": "調整式リアウイング"
+        },
+        "operations": [
+          {
+            "op": "add",
+            "key": "wing_angle",
+            "description": {
+              "name": {
+                "en": "Rear wing angle",
+                "es": "Ángulo del alerón trasero",
+                "ja": "リアウイング角度"
+              },
+              "type": "decimal",
+              "scope": "axle",
+              "unit": "rad",
+              "positions": [
+                "r"
+              ],
+              "group": "aero"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

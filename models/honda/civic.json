@@ -1,0 +1,101 @@
+{
+  "uid": "01a1b586-bd43-7af7-b02f-d87e45b245eb",
+  "id": "honda/civic",
+  "make": {
+    "id": "honda",
+    "name": "Honda",
+    "external": [
+      { "system": "wikidata", "id": "Q9584", "scope": "make" }
+    ]
+  },
+  "name": "Civic",
+  "names": { "en": "Civic", "es": "Civic", "ja": "シビック" },
+  "external": [
+    { "system": "wikidata", "id": "Q216747", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "type-r",
+      "name": "Type R",
+      "names": { "en": "Type R", "es": "Type R", "ja": "TYPE R" },
+      "generations": [
+        {
+          "id": "fl5",
+          "uid": "01a1b586-c2e5-7495-b52d-74075ca3cc53",
+          "name": "FL5",
+          "names": { "en": "FL5", "es": "FL5", "ja": "FL5" },
+          "years": { "from": 2022 },
+          "stock": {
+            "boltPattern": "5x120",
+            "hubBoreMm": 64.1,
+            "wheelDiameterIn": 19,
+            "driveModes": [
+              { "id": "comfort", "name": { "en": "Comfort", "es": "Comfort", "ja": "COMFORT" } },
+              { "id": "sport", "name": { "en": "Sport", "es": "Sport", "ja": "SPORT" } },
+              { "id": "plus_r", "name": { "en": "+R", "es": "+R", "ja": "+R" } },
+              { "id": "individual", "name": { "en": "Individual", "es": "Individual", "ja": "INDIVIDUAL" } }
+            ]
+          },
+          "template": "honda-civic-type-r-fl5"
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "honda-us-spec-2023",
+      "method": "official",
+      "source": "American Honda, 2023 Honda Civic Type R - Specifications & Features (press release)",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/2023-honda-civic-type-r-specifications-features",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-07",
+      "notes": "Stock wheel diameter (19 x 9.5J wheels) and the four drive modes (Comfort, Sport, Individual, +R)."
+    },
+    {
+      "id": "honda-us-drive-modes-2024",
+      "method": "official",
+      "source": "American Honda, 2024 Civic Type R feature guide: 4-Mode Drive System",
+      "url": "https://www.hondainfocenter.com/2024/civic-type-r/feature-guide/engine-chassis-features/4-mode-drive-system/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-07",
+      "notes": "Names of the drive modes: COMFORT, SPORT, +R and INDIVIDUAL."
+    },
+    {
+      "id": "honda-world-premiere-2022",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., Honda Holds World Premiere of the All-new Civic Type R (news release, 21 July 2022)",
+      "url": "https://global.honda/en/newsroom/news/2022/4220721eng.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-07",
+      "notes": "Start of the generation: on sale in Japan from September 2022."
+    },
+    {
+      "id": "hr-fitment-fl5",
+      "method": "published",
+      "source": "H&R Special Springs, application search: Honda Civic Type R FL5 (2023-26), TRAK+ wheel spacers",
+      "url": "https://www.hrsprings.com/application/search/results/13/2581/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-07",
+      "notes": "Bolt pattern 5/120 and centre bore 64.1 mm of the vehicle hub."
+    },
+    {
+      "id": "cobby-wheel-guide",
+      "method": "published",
+      "source": "COBBY, Civic Type R wheel guide (stock FL5 wheel size, P.C.D. and hub diameter)",
+      "url": "https://cobby.jp/civictyper-wheel.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-07",
+      "notes": "Confirms 19 x 9.5J, P.C.D. 120 mm with 5 holes; gives the hub diameter rounded to 64 mm."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Honda (Q9584), Honda Civic (Q216747), Honda Civic Type R (Q748076)",
+      "url": "https://www.wikidata.org/wiki/Q748076",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-07",
+      "notes": "External ids of the make and the model; the Civic Type R item has no separate FL5 generation item."
+    }
+  ]
+}

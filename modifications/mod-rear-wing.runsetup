@@ -1,0 +1,31 @@
+{
+  "orf": "1.3",
+  "kind": "modification",
+  "id": "mod-rear-wing",
+  "version": 1,
+  "name": {
+    "en": "Adjustable rear wing",
+    "es": "Alerón trasero regulable",
+    "ja": "調整式リアウイング"
+  },
+  "operations": [
+    {
+      "op": "add",
+      "key": "wing_angle",
+      "description": {
+        "name": {
+          "en": "Rear wing angle",
+          "es": "Ángulo del alerón trasero",
+          "ja": "リアウイング角度"
+        },
+        "type": "decimal",
+        "scope": "axle",
+        "unit": "rad",
+        "positions": [
+          "r"
+        ],
+        "group": "aero"
+      }
+    }
+  ]
+}
