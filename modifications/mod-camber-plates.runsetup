@@ -12,10 +12,6 @@
     {
       "op": "add",
       "key": "caster"
-    },
-    {
-      "op": "add",
-      "key": "camber"
     }
   ]
 }

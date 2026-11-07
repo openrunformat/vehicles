@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T10:22:07Z",
+  "generatedAt": "2026-11-07T10:23:11Z",
   "source": "https://github.com/openrunformat/vehicles",
   "licence": "CC0-1.0",
   "models": [
@@ -368,10 +368,6 @@
           {
             "op": "add",
             "key": "caster"
-          },
-          {
-            "op": "add",
-            "key": "camber"
           }
         ]
       }
