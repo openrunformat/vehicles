@@ -16,7 +16,7 @@ and exported as a file, without depending on this registry.
 |---|---|
 | `example-make` | Make id: 2 to 32 characters (`a-z`, `0-9`, single `-`) |
 | `example-make/example-model` | Model id: make id, `/`, model name with the same rules |
-| `example-make/example-model/base@gen1` | Generation id: model id, `/`, variant id, `@`, generation id |
+| `example-make/example-model/base@gen1` | Generation id: model id, `/`, variant id, `@`, generation id (variant and generation ids follow the same rules) |
 | `generic-street`, `mod-coilover-2way` | Template and modification ids: up to 64 characters (`a-z`, `0-9`, single `-`) |
 
 Generation ids are the values a `.runsetup` file uses in `appliesTo`. Model and generation `uid` values (UUID

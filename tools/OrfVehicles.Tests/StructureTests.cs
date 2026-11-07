@@ -36,6 +36,34 @@ public class StructureTests
         Assert.Contains(findings, f => f.Code == "schema" && f.Path.StartsWith("/make/external/0", StringComparison.Ordinal));
     }
 
+    [Theory]
+    [InlineData("make")]
+    [InlineData("model")]
+    [InlineData("variant")]
+    [InlineData("generation")]
+    public void Partes_de_id_de_un_caracter_son_hallazgo_de_esquema(string part)
+    {
+        var model = TestRegistry.With(TestRegistry.Model, j =>
+        {
+            switch (part)
+            {
+                case "make": j["make"]!["id"] = "e"; j["id"] = "e/example-model"; break;
+                case "model": j["id"] = "example-make/m"; break;
+                case "variant": j["variants"]![0]!["id"] = "b"; break;
+                default: j["variants"]![0]!["generations"]![0]!["id"] = "g"; break;
+            }
+        });
+        var findings = Validate((TestRegistry.Model, model));
+        Assert.Contains(findings, f => f.Code == "schema" && f.File == TestRegistry.Model);
+    }
+
+    [Fact]
+    public void Partes_de_id_de_dos_caracteres_son_validas()
+    {
+        var model = TestRegistry.With(TestRegistry.Model, j => j["variants"]![0]!["id"] = "b2");
+        Assert.DoesNotContain(Validate((TestRegistry.Model, model)), f => f.Code == "schema");
+    }
+
     [Fact]
     public void Json_roto_es_hallazgo_json()
     {
