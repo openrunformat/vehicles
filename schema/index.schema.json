@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/openrunformat/vehicles/schema/index.schema.json",
+  "$id": "https://raw.githubusercontent.com/openrunformat/vehicles/main/schema/index.schema.json",
   "title": "Open Run Format vehicle registry index (dist/index.json)",
   "type": "object",
   "additionalProperties": false,
