@@ -58,6 +58,35 @@ Besides the schema, `validate` checks that ids and uids are unique, that every `
 registry, that every generation's `template` exists, that each file sits in the folder of its kind and that every
 template can be composed with every generic modification (and with the modifications for its generations).
 
+Each problem is reported as `<file>:<JSON pointer>: <code>: <message>`. The codes are:
+
+| Code | Problem |
+|---|---|
+| `json` | The file is not valid UTF-8 JSON, or a property appears twice |
+| `schema` | A model file does not match `schema/model.schema.json`, or a text or property name holds control characters |
+| `runsetup` | A `.runsetup` file is rejected by the Open Run Format reader |
+| `systems` | `schema/systems.json` cannot be used |
+| `stray-file` | A file that does not belong where it is |
+| `file-name` | A file is not stored under the name its id requires |
+| `kind-mismatch` | A `.runsetup` file is in the folder of another kind |
+| `make-mismatch` | The `make` block does not match the id, or differs between files of the same make |
+| `id-syntax` | A template or modification id does not follow the rules |
+| `duplicate-id` | An id appears more than once (models, variants, generations, drive modes, templates and modifications) |
+| `duplicate-uid` | A uid appears more than once |
+| `uid-not-v7` | A uid is not a UUID version 7 |
+| `years` | A generation ends before it starts |
+| `provenance` | A source is repeated, cannot be checked, or has an incompatible licence or no attribution |
+| `system-unknown` | An external id names a system not listed in `schema/systems.json` |
+| `external-pattern` | An external id does not follow the pattern of its system |
+| `duplicate-external` | The same external id is linked twice |
+| `orf-version` | A `.runsetup` file is older than Open Run Format 1.3 |
+| `registry-values` | A template or modification carries `values`, `vehicle` or `extensions` |
+| `ignored-entry` | A parameter, operation or `damperWays` that readers would ignore |
+| `nonstandard-key` | A key that is neither standard nor starts with `x-` |
+| `unknown-template` | A generation names a template that does not exist |
+| `unknown-applies-to` | `appliesTo` names a generation that is not in the registry |
+| `compose-failed` | A template cannot be composed with a modification |
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).

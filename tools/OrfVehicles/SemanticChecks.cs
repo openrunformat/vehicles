@@ -168,6 +168,11 @@ internal static partial class SemanticChecks
                 Add("/id", "file-name", $"'{id}' must be stored as {folder}/{id}{RunSetupFile.Extension}.");
         }
 
+        // The index ships every file whole: values someone used, vehicle descriptions and application data stay out.
+        foreach (var field in new[] { "values", "vehicle", "extensions" })
+            if (j.ContainsKey(field))
+                Add($"/{field}", "registry-values", $"Registry files must not carry '{field}': the index publishes every file whole.");
+
         // Entries the readers would ignore on their own: in a curated registry, they are mistakes.
         if (j["parameters"] is JsonObject parameters)
         {

@@ -38,6 +38,25 @@ public class SemanticTests
         Assert.Contains("models/example-make/example-model", dup.ToString());
     }
 
+    [Theory]
+    [InlineData("values")]
+    [InlineData("vehicle")]
+    [InlineData("extensions")]
+    public void Ficheros_del_registro_no_llevan_valores_vehiculo_ni_extensiones(string field)
+    {
+        JsonNode content = field == "extensions"
+            ? new JsonObject { ["x-example"] = new JsonObject { ["owner"] = "someone" } }
+            : new JsonObject { ["camber.fl"] = "-0.03" };
+        foreach (var file in new[] { TestRegistry.GenericTemplate, TestRegistry.GenericModification })
+        {
+            var findings = Validate((file, TestRegistry.With(file, j => j[field] = content.DeepClone())));
+            var f = Assert.Single(findings);
+            Assert.Equal("registry-values", f.Code);
+            Assert.Equal(file, f.File);
+            Assert.Equal("/" + field, f.Path);
+        }
+    }
+
     [Fact]
     public void AppliesTo_de_una_plantilla_tambien_se_comprueba()
     {

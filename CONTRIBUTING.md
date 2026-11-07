@@ -48,6 +48,18 @@ every file must be useful to many people, so the rules below are strict.
   `templates/<id>.runsetup` (`kind: "template"`) or `modifications/<id>.runsetup` (`kind: "modification"`).
 - Use the standard vocabulary of the specification where it fits; any other key starts with `x-` and carries a
   description with names in as many languages as you can.
+- Templates and modifications carry no `values`, `vehicle` or `extensions`: the index publishes every file whole, so
+  values someone used, vehicle descriptions and application data stay out of the registry (finding `registry-values`).
+- Reuse the registry's shared `x-` keys instead of inventing new ones for the same thing, with the same type and scope:
+
+  | Key | Type | Meaning |
+  |---|---|---|
+  | `x-note` | text | Free note about the setup |
+  | `x-suspension` | choice | Which suspension the car has (for example stock); modifications that replace it remove this key |
+  | `x-engine-map` | choice or text | Engine map or ECU calibration in use |
+  | `x-drive-mode` | choice | Drive mode selected (the model's own modes) |
+
+  New model templates should use these keys where they apply; a new `x-` key is only for something none of them covers.
 - Raise `version` with every change. Never reuse an id for something different.
 - A generic modification has no `appliesTo` (or an empty one) and must compose with every template.
 
@@ -75,5 +87,6 @@ only the item itself; do not copy lists from the database. To accept a new syste
 - [ ] Every stock fact is in a public source listed in `provenance`; nothing that cannot be checked.
 - [ ] No part brands, user variants, setups or personal data.
 - [ ] Ids follow the rules above; no uid was changed; the generation years make sense.
-- [ ] New `x-` parameters have clear names and are not already in the standard vocabulary.
+- [ ] New `x-` parameters have clear names, are not already in the standard vocabulary and do not duplicate a shared
+      `x-` key.
 - [ ] Changed templates and modifications have a higher `version`.
