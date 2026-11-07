@@ -1,0 +1,65 @@
+{
+  "uid": "01a19c89-ee4a-7000-8000-000000000001",
+  "id": "example-make/example-model",
+  "make": {
+    "id": "example-make",
+    "name": "Example Make",
+    "external": [
+      { "system": "wikidata", "id": "Q999999998", "scope": "make" }
+    ]
+  },
+  "name": "Example Model",
+  "names": { "es": "Modelo de ejemplo" },
+  "external": [
+    { "system": "wikidata", "id": "Q999999999", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "base",
+      "name": "Base",
+      "generations": [
+        {
+          "id": "gen1",
+          "uid": "01a19c89-ee4a-7000-8000-000000000002",
+          "name": "First generation",
+          "years": { "from": 2018, "to": 2022 },
+          "stock": {
+            "boltPattern": "5x114.3",
+            "hubBoreMm": 60.1,
+            "wheelDiameterIn": 17,
+            "driveModes": [
+              { "id": "normal", "name": { "en": "Normal", "es": "Normal" } },
+              { "id": "sport_plus", "name": { "en": "Sport+", "es": "Sport+" } }
+            ]
+          },
+          "template": "example-model-gen1"
+        },
+        {
+          "id": "gen2",
+          "uid": "01a19c89-ee4a-7000-8000-000000000003",
+          "name": "Second generation",
+          "years": { "from": 2022 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "p1",
+      "method": "official",
+      "source": "Synthetic specification sheet",
+      "url": "https://example.com/spec-sheet",
+      "contributor": "example",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "p2",
+      "method": "published",
+      "source": "Synthetic reference",
+      "licence": "CC-BY-4.0",
+      "attribution": "Synthetic attribution",
+      "contributor": "example",
+      "date": "2026-11-07"
+    }
+  ]
+}

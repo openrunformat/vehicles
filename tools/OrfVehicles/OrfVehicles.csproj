@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>orf-vehicles</AssemblyName>
+    <RootNamespace>OrfVehicles</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="OpenRunFormat" Version="0.5.0" />
+    <PackageReference Include="JsonSchema.Net" Version="9.6.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="OrfVehicles.Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\schema\*.json" Link="schema\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

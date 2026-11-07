@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/openrunformat/vehicles/schema/index.schema.json",
+  "title": "Open Run Format vehicle registry index (dist/index.json)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "generatedAt", "source", "licence", "models", "templates", "modifications"],
+  "properties": {
+    "version": { "const": 1 },
+    "generatedAt": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$" },
+    "source": { "type": "string" },
+    "licence": { "const": "CC0-1.0" },
+    "models": { "type": "array", "items": { "$ref": "#/$defs/model" } },
+    "templates": { "type": "array", "items": { "$ref": "#/$defs/setup", "properties": { "file": { "properties": { "kind": { "const": "template" } } } } } },
+    "modifications": { "type": "array", "items": { "$ref": "#/$defs/setup", "properties": { "file": { "properties": { "kind": { "const": "modification" } } } } } }
+  },
+  "$defs": {
+    "uid": { "type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$" },
+    "names": { "type": "object", "additionalProperties": { "type": "string" } },
+    "external": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["system", "id", "scope"],
+      "properties": {
+        "system": { "type": "string" },
+        "id": { "type": "string" },
+        "scope": { "enum": ["make", "model"] }
+      }
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "uid", "make", "name", "names", "external", "variants", "attribution"],
+      "properties": {
+        "id": { "type": "string" },
+        "uid": { "$ref": "#/$defs/uid" },
+        "make": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "name", "external"],
+          "properties": {
+            "id": { "type": "string" },
+            "name": { "type": "string" },
+            "external": { "type": "array", "items": { "$ref": "#/$defs/external" } }
+          }
+        },
+        "name": { "type": "string" },
+        "names": { "$ref": "#/$defs/names" },
+        "external": { "type": "array", "items": { "$ref": "#/$defs/external" } },
+        "variants": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/variant" } },
+        "attribution": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "names", "generations"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "names": { "$ref": "#/$defs/names" },
+        "generations": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/generation" } }
+      }
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "fullId", "uid", "name", "names", "years", "stock", "template"],
+      "properties": {
+        "id": { "type": "string" },
+        "fullId": { "type": "string" },
+        "uid": { "$ref": "#/$defs/uid" },
+        "name": { "type": "string" },
+        "names": { "$ref": "#/$defs/names" },
+        "years": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from", "to"],
+          "properties": {
+            "from": { "type": "integer" },
+            "to": { "type": ["integer", "null"] }
+          }
+        },
+        "stock": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "boltPattern": { "type": "string" },
+            "hubBoreMm": { "type": "number" },
+            "wheelDiameterIn": { "type": "number" },
+            "driveModes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["id", "name"],
+                "properties": { "id": { "type": "string" }, "name": { "$ref": "#/$defs/names" } }
+              }
+            }
+          }
+        },
+        "template": { "type": ["string", "null"] }
+      }
+    },
+    "setup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "name", "appliesTo", "file"],
+      "properties": {
+        "id": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "name": { "$ref": "#/$defs/names" },
+        "appliesTo": { "type": "array", "items": { "type": "string" } },
+        "file": {
+          "description": "The whole .runsetup file, as in the repository (see the Open Run Format specification, section 11).",
+          "type": "object",
+          "required": ["orf", "kind", "id", "version", "name"]
+        }
+      }
+    }
+  }
+}

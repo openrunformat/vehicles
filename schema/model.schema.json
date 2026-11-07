@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/openrunformat/vehicles/schema/model.schema.json",
+  "title": "Open Run Format vehicle registry model",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["uid", "id", "make", "name", "variants", "provenance"],
+  "properties": {
+    "uid": { "$ref": "#/$defs/uid" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 65 },
+    "make": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "$ref": "#/$defs/segment" },
+        "name": { "type": "string", "minLength": 1 },
+        "external": { "type": "array", "items": { "$ref": "#/$defs/external", "properties": { "scope": { "const": "make" } } } }
+      }
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "names": { "$ref": "#/$defs/names" },
+    "external": { "type": "array", "items": { "$ref": "#/$defs/external", "properties": { "scope": { "const": "model" } } } },
+    "variants": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/variant" } },
+    "provenance": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/provenance" } }
+  },
+  "$defs": {
+    "uid": { "type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$" },
+    "segment": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 32 },
+    "setupId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 64 },
+    "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "year": { "type": "integer", "minimum": 1880, "maximum": 2200 },
+    "names": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$" },
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "external": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["system", "id", "scope"],
+      "properties": {
+        "system": { "type": "string", "minLength": 1 },
+        "id": { "type": "string", "minLength": 1 },
+        "scope": { "enum": ["make", "model"] }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "generations"],
+      "properties": {
+        "id": { "$ref": "#/$defs/segment" },
+        "name": { "type": "string", "minLength": 1 },
+        "names": { "$ref": "#/$defs/names" },
+        "generations": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/generation" } }
+      }
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "uid", "name", "years"],
+      "properties": {
+        "id": { "$ref": "#/$defs/segment" },
+        "uid": { "$ref": "#/$defs/uid" },
+        "name": { "type": "string", "minLength": 1 },
+        "names": { "$ref": "#/$defs/names" },
+        "years": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from"],
+          "properties": {
+            "from": { "$ref": "#/$defs/year" },
+            "to": { "$ref": "#/$defs/year" }
+          }
+        },
+        "stock": { "$ref": "#/$defs/stock" },
+        "template": { "$ref": "#/$defs/setupId" }
+      }
+    },
+    "stock": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "boltPattern": { "type": "string", "pattern": "^[3-8]x[1-9][0-9]{1,2}(\\.[0-9]+)?$" },
+        "hubBoreMm": { "type": "number", "exclusiveMinimum": 0, "maximum": 300 },
+        "wheelDiameterIn": { "type": "number", "exclusiveMinimum": 0, "maximum": 30 },
+        "driveModes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$", "maxLength": 32 },
+              "name": { "type": "object", "minProperties": 1, "$ref": "#/$defs/names" }
+            }
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "method", "contributor", "date"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]{1,32}$" },
+        "method": { "enum": ["official", "published", "measured"] },
+        "source": { "type": "string", "minLength": 1 },
+        "licence": { "type": "string", "minLength": 1 },
+        "attribution": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "minLength": 1 },
+        "contributor": { "type": "string", "minLength": 1 },
+        "date": { "$ref": "#/$defs/date" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

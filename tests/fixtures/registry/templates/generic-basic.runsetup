@@ -1,0 +1,20 @@
+{
+  "orf": "1.3",
+  "kind": "template",
+  "id": "generic-basic",
+  "version": 1,
+  "name": { "en": "Basic", "es": "Básica" },
+  "parameters": {
+    "tyre_pressure_cold": {},
+    "camber": {},
+    "x-suspension": {
+      "name": { "en": "Suspension", "es": "Suspensión" },
+      "type": "choice",
+      "scope": "single",
+      "choices": [ { "id": "stock", "name": { "en": "Stock", "es": "De serie" } } ],
+      "allowOther": true,
+      "group": "suspension"
+    }
+  },
+  "damperWays": { "front": 0, "rear": 0 }
+}

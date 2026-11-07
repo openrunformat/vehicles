@@ -1,0 +1,23 @@
+{
+  "orf": "1.3",
+  "kind": "template",
+  "id": "example-model-gen1",
+  "version": 2,
+  "appliesTo": ["example-make/example-model/base@gen1"],
+  "name": { "en": "Example Model, first generation" },
+  "parameters": {
+    "tyre_pressure_cold": {},
+    "toe": {},
+    "x-drive-mode": {
+      "name": { "en": "Drive mode" },
+      "type": "choice",
+      "scope": "single",
+      "choices": [
+        { "id": "normal", "name": { "en": "Normal" } },
+        { "id": "sport_plus", "name": { "en": "Sport+" } }
+      ],
+      "allowOther": true,
+      "group": "electronics"
+    }
+  }
+}
