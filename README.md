@@ -32,6 +32,8 @@ version 7) never change. Templates and modifications carry a `version` that grow
 | `schema/` | JSON schemas of a model file and of the index; `systems.json` lists accepted external id systems |
 | `dist/index.json` | Generated index of the whole registry (never edited by hand) |
 | `tools/` | `orf-vehicles`, the validator and index generator (.NET) |
+| `packages/` | The Open Run Format library package the tools build against |
+| `.github/` | Continuous integration: validation of every pull request and regeneration of the index |
 | `tests/fixtures/` | A synthetic registry used by the tests |
 
 ## Index
@@ -96,8 +98,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - **Data** — `models/`, `templates/`, `modifications/`, `schema/`, `dist/` and `tests/fixtures/` — and this
   documentation are dedicated to the public domain under CC0-1.0 (see [`LICENSE`](LICENSE)). By contributing data you
   dedicate it under CC0-1.0 too.
-- **Code** — `tools/` — is licensed under the Apache License 2.0 (see [`tools/LICENSE`](tools/LICENSE) and
-  [`tools/NOTICE`](tools/NOTICE)).
+- **Code** — `tools/` and the continuous integration in `.github/` — is licensed under the Apache License 2.0 (see
+  [`tools/LICENSE`](tools/LICENSE) and [`tools/NOTICE`](tools/NOTICE)).
+- **`packages/`** holds `OpenRunFormat.<version>.nupkg`, the Open Run Format library the tools build against: an
+  Apache-2.0 binary built from [openrunformat/spec](https://github.com/openrunformat/spec), unchanged, under that
+  project's licence and notice.
 
 Make and model names are used only to identify the vehicles; they belong to their owners. The registry is not
 affiliated with or endorsed by any vehicle manufacturer.
