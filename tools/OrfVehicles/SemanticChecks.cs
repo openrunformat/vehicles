@@ -180,9 +180,12 @@ internal static partial class SemanticChecks
             {
                 var probe = new JsonObject { ["parameters"] = new JsonObject { [key] = value?.DeepClone() } };
                 if (Probe(probe, RunSetupKind.Template).Parameters.Count != 1)
-                    Add($"/parameters/{Pointer(key)}", "ignored-entry", "Readers ignore this parameter: its description is malformed, or the key needs one.");
+                    Add($"/parameters/{Pointer(key)}", "ignored-entry",
+                        "Readers ignore this parameter: its description is malformed, or it has none and the key starts with 'x-' or has a position or '.ref' suffix.");
                 else if (orfApplies && !SetupVocabulary.IsStandard(key) && !SetupVocabulary.IsCustom(key))
                     Add($"/parameters/{Pointer(key)}", "nonstandard-key", $"'{key}' is not in the standard vocabulary; non-standard keys start with 'x-'.");
+                else if (orfApplies && StandardDescriptionProblem(key, value) is { } problem)
+                    Add($"/parameters/{Pointer(key)}", "standard-description", problem);
             }
         }
         else if (j["parameters"] is not null)
@@ -195,9 +198,13 @@ internal static partial class SemanticChecks
                 var probe = new JsonObject { ["operations"] = new JsonArray(operations[i]?.DeepClone()) };
                 var parsed = Probe(probe, RunSetupKind.Modification).Operations;
                 if (parsed.Count != 1)
-                    Add($"/operations/{i}", "ignored-entry", "Readers ignore this operation: it is malformed, or a non-standard key has no description.");
+                    Add($"/operations/{i}", "ignored-entry",
+                        "Readers ignore this operation: it is malformed, or it has no description for a key that starts with 'x-' or has a position or '.ref' suffix.");
                 else if (orfApplies && parsed[0].Key is { } key && !SetupVocabulary.IsStandard(key) && !SetupVocabulary.IsCustom(key))
                     Add($"/operations/{i}/key", "nonstandard-key", $"'{key}' is not in the standard vocabulary; non-standard keys start with 'x-'.");
+                else if (orfApplies && parsed[0].Key is { } stdKey && operations[i]?["description"] is JsonObject d
+                         && StandardDescriptionProblem(stdKey, d) is { } problem)
+                    Add($"/operations/{i}/description", "standard-description", problem);
             }
         }
         else if (j["operations"] is not null)
@@ -205,6 +212,25 @@ internal static partial class SemanticChecks
 
         if (j["damperWays"] is not null && s.DamperWays is null)
             Add("/damperWays", "ignored-entry", "Readers ignore 'damperWays': it needs integer 'front' and 'rear' between 0 and 4.");
+    }
+
+    // A description of a standard key must keep the vocabulary's type, unit, scope and choices (readers would silently
+    // use the vocabulary's instead). Null when it agrees, or when the key is not standard or has no description.
+    private static string? StandardDescriptionProblem(string key, JsonNode? description)
+    {
+        if (!SetupVocabulary.Standard.TryGetValue(key, out var standard) || description is not JsonObject d || d.Count == 0)
+            return null;
+        var scope = standard.Scope switch { SetupScope.Wheel => "wheel", SetupScope.Axle => "axle", _ => "single" };
+        if (Str(d, "type") != standard.Type || Str(d, "scope") != scope || Str(d, "unit") != standard.Unit)
+            return $"'{key}' is standard: its description must use type '{standard.Type}', scope '{scope}' and "
+                + (standard.Unit is null ? "no unit." : $"unit '{standard.Unit}'.");
+        var allowed = standard.Choices?.Select(c => c.Id).ToHashSet(StringComparer.Ordinal) ?? [];
+        var ids = (d["choices"] as JsonArray ?? []).Select(c => c?["id"]?.GetValue<string>()).ToList();
+        if (ids.Any(id => id is null || !allowed.Contains(id)) || d["allowOther"]?.GetValue<bool>() == true)
+            return allowed.Count == 0
+                ? $"'{key}' is standard and has no choices; remove 'choices' and 'allowOther'."
+                : $"'{key}' is standard: its choices can only be {string.Join(", ", allowed)}, without 'allowOther'.";
+        return null;
     }
 
     private static RunSetup Probe(JsonObject content, RunSetupKind kind)

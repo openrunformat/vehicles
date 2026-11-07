@@ -85,6 +85,7 @@ Each problem is reported as `<file>:<JSON pointer>: <code>: <message>`. The code
 | `registry-values` | A template or modification carries `values`, `vehicle` or `extensions` |
 | `ignored-entry` | A parameter, operation or `damperWays` that readers would ignore |
 | `nonstandard-key` | A key that is neither standard nor starts with `x-` |
+| `standard-description` | A description of a standard key with another type, unit or scope than the vocabulary's, or other choices |
 | `unknown-template` | A generation names a template that does not exist |
 | `unknown-applies-to` | `appliesTo` names a generation that is not in the registry |
 | `compose-failed` | A template cannot be composed with a modification |

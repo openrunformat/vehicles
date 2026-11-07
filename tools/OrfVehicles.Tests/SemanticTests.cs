@@ -57,6 +57,50 @@ public class SemanticTests
         }
     }
 
+    private static JsonNode Desc(string type, string scope, string? unit = null, params string[] choices)
+    {
+        var d = new JsonObject { ["name"] = new JsonObject { ["en"] = "A" }, ["type"] = type, ["scope"] = scope };
+        if (unit is not null) d["unit"] = unit;
+        if (choices.Length > 0)
+            d["choices"] = new JsonArray(choices.Select(c => (JsonNode)new JsonObject { ["id"] = c, ["name"] = new JsonObject { ["en"] = c } }).ToArray());
+        return d;
+    }
+
+    public static TheoryData<string, string> DescripcionesEstandar() => new()
+    {
+        { "camber", Desc("text", "wheel").ToJsonString() },
+        { "camber", Desc("decimal", "axle", "rad").ToJsonString() },
+        { "camber", Desc("decimal", "wheel", "deg").ToJsonString() },
+        { "camber", Desc("decimal", "wheel").ToJsonString() },
+        { "damper_click_reference", Desc("choice", "single", null, "from_hard", "middle").ToJsonString() },
+        { "tyres", Desc("text", "single", null, "a").ToJsonString() },
+    };
+
+    [Theory]
+    [MemberData(nameof(DescripcionesEstandar))]
+    public void Descripcion_de_clave_estandar_distinta_del_vocabulario(string key, string description)
+    {
+        var template = Validate((TestRegistry.GenericTemplate, TestRegistry.With(TestRegistry.GenericTemplate,
+            j => j["parameters"]![key] = JsonNode.Parse(description))));
+        var f = Assert.Single(template);
+        Assert.Equal(("standard-description", $"/parameters/{key}"), (f.Code, f.Path));
+
+        var mod = Validate((TestRegistry.GenericModification, TestRegistry.With(TestRegistry.GenericModification,
+            j => j["operations"]![1] = new JsonObject { ["op"] = "add", ["key"] = key, ["description"] = JsonNode.Parse(description) })));
+        Assert.Contains(mod, x => x.Code == "standard-description" && x.Path == "/operations/1/description");
+    }
+
+    [Fact]
+    public void Descripcion_de_clave_estandar_igual_al_vocabulario_es_valida()
+    {
+        var findings = Validate((TestRegistry.GenericTemplate, TestRegistry.With(TestRegistry.GenericTemplate, j =>
+        {
+            j["parameters"]!["camber"] = Desc("decimal", "wheel", "rad");
+            j["parameters"]!["damper_click_reference"] = Desc("choice", "single", null, "from_soft");
+        })));
+        Assert.Empty(findings);
+    }
+
     [Fact]
     public void AppliesTo_de_una_plantilla_tambien_se_comprueba()
     {

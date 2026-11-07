@@ -47,7 +47,8 @@ every file must be useful to many people, so the rules below are strict.
 - `.runsetup` files of Open Run Format 1.3 or later (section 11 of the specification), saved as
   `templates/<id>.runsetup` (`kind: "template"`) or `modifications/<id>.runsetup` (`kind: "modification"`).
 - Use the standard vocabulary of the specification where it fits; any other key starts with `x-` and carries a
-  description with names in as many languages as you can.
+  description with names in as many languages as you can. A description of a standard key (for example to translate
+  its name) keeps the vocabulary's type, unit, scope and choices (finding `standard-description`).
 - Templates and modifications carry no `values`, `vehicle` or `extensions`: the index publishes every file whole, so
   values someone used, vehicle descriptions and application data stay out of the registry (finding `registry-values`).
 - Reuse the registry's shared `x-` keys instead of inventing new ones for the same thing, with the same type and scope:
