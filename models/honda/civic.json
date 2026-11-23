@@ -20,6 +20,48 @@
       "names": { "en": "Type R", "es": "Type R", "ja": "TYPE R" },
       "generations": [
         {
+          "id": "ek9",
+          "uid": "01a20a43-6053-7a96-b111-3d4be0378a41",
+          "name": "EK9",
+          "names": { "en": "EK9", "es": "EK9", "ja": "EK9" },
+          "years": { "from": 1997, "to": 2001 }
+        },
+        {
+          "id": "ep3",
+          "uid": "01a20a43-606c-716e-befc-2ca6596f16b0",
+          "name": "EP3",
+          "names": { "en": "EP3", "es": "EP3", "ja": "EP3" },
+          "years": { "from": 2001, "to": 2005 }
+        },
+        {
+          "id": "fd2",
+          "uid": "01a20a43-6086-7444-8979-2d08c27c84c6",
+          "name": "FD2",
+          "names": { "en": "FD2", "es": "FD2", "ja": "FD2" },
+          "years": { "from": 2007, "to": 2011 }
+        },
+        {
+          "id": "fn2",
+          "uid": "01a20a43-60a1-786c-a12f-30700d48adba",
+          "name": "FN2",
+          "names": { "en": "FN2", "es": "FN2", "ja": "FN2" },
+          "years": { "from": 2007, "to": 2012 }
+        },
+        {
+          "id": "fk2",
+          "uid": "01a20a43-60bb-7254-b10f-624e561d6545",
+          "name": "FK2",
+          "names": { "en": "FK2", "es": "FK2", "ja": "FK2" },
+          "years": { "from": 2015, "to": 2016 }
+        },
+        {
+          "id": "fk8",
+          "uid": "01a20a43-60d4-7e8c-94e6-df5caef6de3a",
+          "name": "FK8",
+          "names": { "en": "FK8", "es": "FK8", "ja": "FK8" },
+          "years": { "from": 2017, "to": 2021 }
+        },
+        {
           "id": "fl5",
           "uid": "01a1b586-c2e5-7495-b52d-74075ca3cc53",
           "name": "FL5",
@@ -96,6 +138,87 @@
       "contributor": "Open Run Format maintainers",
       "date": "2026-11-07",
       "notes": "External ids of the make and the model; the Civic Type R item has no separate FL5 generation item."
+    },
+    {
+      "id": "honda-type-r-30th-stories",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., Honda Stories: Celebrating the 30th Anniversary of Honda Type R (31 March 2023)",
+      "url": "https://global.honda/en/stories/048/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Chassis codes of every Civic Type R generation and the year each was introduced: EK9 (1997), EP3 (2001), FD2 (2007), FN2 'Civic Type R Euro' (launched in Europe in 2007, on sale in Japan from 2009), FK2 (2015), FK8 (2017) and FL5 (2022). FD2 and FN2 are parallel models of the same period: FD2 is the four-door sold in Japan, FN2 the three-door built in Europe."
+    },
+    {
+      "id": "honda-jp-archive-type-r",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., Honda car archive (Japan): CIVIC TYPE R sales periods",
+      "url": "https://www.honda.co.jp/auto-archive/civic/type-r/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Sales periods in Japan, used for the years of the generations: 1997-08 to 2001-09 (EK9), 2001-10 to 2003-12 and 2004-01 to 2005-08 (EP3), 2007-03 to 2011-03 (FD2), CIVIC TYPE R EURO 2009-11 to 2012-06 (FN2), 2015-10 to 2016-03 (FK2), 2017-07 to 2019-12 and 2020-01 to 2021-07 (FK8). The specification page of the first model gives the type designation E-EK9."
+    },
+    {
+      "id": "honda-jp-ep3-2001",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., news release: CIVIC TYPE R full model change (18 October 2001)",
+      "url": "https://global.honda/jp/news/2001/4011018c-civic.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Start of the EP3 generation in Japan."
+    },
+    {
+      "id": "honda-jp-ep3-2004",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., news release: CIVIC TYPE R minor model change (22 January 2004)",
+      "url": "https://global.honda/jp/news/2004/4040122-civic.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Mid-cycle update of the EP3 from 2004; same generation, no new chassis code."
+    },
+    {
+      "id": "honda-jp-fd2-2007",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., news release: TYPE R added to the CIVIC range (29 March 2007)",
+      "url": "https://global.honda/jp/news/2007/4070329-civic.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Start of the FD2 generation in Japan."
+    },
+    {
+      "id": "autoexpress-fk2-end",
+      "method": "published",
+      "source": "Auto Express, Honda Civic Type R Black Edition ends Type R production (10 January 2017)",
+      "url": "https://www.autoexpress.co.uk/honda/civic/98247/honda-civic-type-r-black-edition-ends-fk2-type-r-production",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Production of the FK2 at Swindon was over by January 2017: the last year of the generation is 2016."
+    },
+    {
+      "id": "honda-jp-fk8-2017",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., news release: new CIVIC on sale, including the CIVIC TYPE R (27 July 2017)",
+      "url": "https://global.honda/jp/news/2017/4170727-civic.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Start of the FK8 generation in Japan."
+    },
+    {
+      "id": "honda-jp-fk8-2020",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., news release: CIVIC TYPE R minor model change (8 October 2020)",
+      "url": "https://global.honda/jp/news/2020/4201008-civic.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Mid-cycle update of the FK8 from 2020; same generation, no new chassis code."
+    },
+    {
+      "id": "honda-us-fl5-2027",
+      "method": "official",
+      "source": "American Honda, Updated 2027 Honda Civic Type R Gains Sharper Performance, Heated Seats and More Standard Tech; Arriving Soon (press release, 1 October 2026)",
+      "url": "https://hondanews.com/en-US/honda-automobiles/releases/updated-2027-honda-civic-type-r-gains-sharper-performance-heated-seats-and-more-standard-tech-arriving-soon",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Mid-cycle update of the current Civic Type R (model year 2027 in the United States, at dealers from October 2026): revised front fascia and +R damping, same engine. Honda gives it no new chassis code, so it stays in the FL5 generation, which is still in production."
     }
   ]
 }
