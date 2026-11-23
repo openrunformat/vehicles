@@ -1,0 +1,71 @@
+{
+  "uid": "01a20a95-3a28-79d5-83a0-91b8123b42b4",
+  "id": "peugeot/308",
+  "make": {
+    "id": "peugeot",
+    "name": "Peugeot",
+    "external": [
+      { "system": "wikidata", "id": "Q6742", "scope": "make" }
+    ]
+  },
+  "name": "308",
+  "names": { "en": "308", "es": "308", "ja": "308" },
+  "external": [
+    { "system": "wikidata", "id": "Q497858", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "racing-cup",
+      "name": "Racing Cup",
+      "names": { "en": "Racing Cup", "es": "Racing Cup", "ja": "Racing Cup" },
+      "generations": [
+        {
+          "id": "gen2",
+          "uid": "01a20a95-3a41-703f-b06f-a24225466bf1",
+          "name": "308 II",
+          "names": { "en": "308 II", "es": "308 II", "ja": "308 II" },
+          "years": { "from": 2016 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "peugeot-308-racing-cup-2015",
+      "method": "official",
+      "source": "Peugeot, PEUGEOT 308 Racing Cup: der geborene Racer (press release, 4 September 2015)",
+      "url": "https://www.media.stellantis.com/de-de/peugeot/press/peugeot-308-racing-cup-der-geborene-racer-1632576742-1441317600",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Race version of the 308 GTi by Peugeot Sport, presented at the 2015 Frankfurt motor show."
+    },
+    {
+      "id": "peugeot-308-racing-cup-2016",
+      "method": "official",
+      "source": "Peugeot, Entregado el primer PEUGEOT 308 Racing Cup (press release, 2016)",
+      "url": "https://www.media.stellantis.com/es-es/peugeot/press/entregado-el-primer-peugeot-308-racing-cup",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Orders opened on 30 October 2016 and the first customer car was delivered that year: start of the generation. No end of production found in an official source, so the generation is left open."
+    },
+    {
+      "id": "peugeot-308tcr-2018",
+      "method": "official",
+      "source": "Peugeot Sport, PEUGEOT 308TCR: six cars ready to take on TCR Europe (press release, 2018)",
+      "url": "https://www.media.stellantis.com/em-en/peugeot-sport/press/peugeot-308tcr-six-cars-ready-to-take-on-tcr-europe",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The 308TCR, revealed in January 2018, was developed from the 308 Racing Cup; it is a separate car and is not part of this variant."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Peugeot (Q6742), Peugeot 308 (Q497858), Peugeot 308 II (Q3377742)",
+      "url": "https://www.wikidata.org/wiki/Q497858",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model; the name 308 II of the second generation, on which the 308 GTi and the Racing Cup are based."
+    }
+  ]
+}
