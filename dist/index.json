@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T10:42:30Z",
+  "generatedAt": "2026-11-23T22:04:28Z",
   "source": "https://github.com/openrunformat/vehicles",
   "licence": "CC0-1.0",
   "models": [
@@ -41,6 +41,108 @@
             "ja": "TYPE R"
           },
           "generations": [
+            {
+              "id": "ek9",
+              "fullId": "honda/civic/type-r@ek9",
+              "uid": "01a20a43-6053-7a96-b111-3d4be0378a41",
+              "name": "EK9",
+              "names": {
+                "en": "EK9",
+                "es": "EK9",
+                "ja": "EK9"
+              },
+              "years": {
+                "from": 1997,
+                "to": 2001
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "ep3",
+              "fullId": "honda/civic/type-r@ep3",
+              "uid": "01a20a43-606c-716e-befc-2ca6596f16b0",
+              "name": "EP3",
+              "names": {
+                "en": "EP3",
+                "es": "EP3",
+                "ja": "EP3"
+              },
+              "years": {
+                "from": 2001,
+                "to": 2005
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "fd2",
+              "fullId": "honda/civic/type-r@fd2",
+              "uid": "01a20a43-6086-7444-8979-2d08c27c84c6",
+              "name": "FD2",
+              "names": {
+                "en": "FD2",
+                "es": "FD2",
+                "ja": "FD2"
+              },
+              "years": {
+                "from": 2007,
+                "to": 2011
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "fn2",
+              "fullId": "honda/civic/type-r@fn2",
+              "uid": "01a20a43-60a1-786c-a12f-30700d48adba",
+              "name": "FN2",
+              "names": {
+                "en": "FN2",
+                "es": "FN2",
+                "ja": "FN2"
+              },
+              "years": {
+                "from": 2007,
+                "to": 2012
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "fk2",
+              "fullId": "honda/civic/type-r@fk2",
+              "uid": "01a20a43-60bb-7254-b10f-624e561d6545",
+              "name": "FK2",
+              "names": {
+                "en": "FK2",
+                "es": "FK2",
+                "ja": "FK2"
+              },
+              "years": {
+                "from": 2015,
+                "to": 2016
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "fk8",
+              "fullId": "honda/civic/type-r@fk8",
+              "uid": "01a20a43-60d4-7e8c-94e6-df5caef6de3a",
+              "name": "FK8",
+              "names": {
+                "en": "FK8",
+                "es": "FK8",
+                "ja": "FK8"
+              },
+              "years": {
+                "from": 2017,
+                "to": 2021
+              },
+              "stock": null,
+              "template": null
+            },
             {
               "id": "fl5",
               "fullId": "honda/civic/type-r@fl5",
