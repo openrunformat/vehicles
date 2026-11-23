@@ -1,0 +1,71 @@
+{
+  "uid": "01a20a95-3973-7d72-9f97-0125084206a3",
+  "id": "alpine/a110",
+  "make": {
+    "id": "alpine",
+    "name": "Alpine",
+    "external": [
+      { "system": "wikidata", "id": "Q26944", "scope": "make" }
+    ]
+  },
+  "name": "A110",
+  "names": { "en": "A110", "es": "A110", "ja": "A110" },
+  "external": [
+    { "system": "wikidata", "id": "Q24936559", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "gt4",
+      "name": "GT4",
+      "names": { "en": "GT4", "es": "GT4", "ja": "GT4" },
+      "generations": [
+        {
+          "id": "gen2",
+          "uid": "01a20a95-398d-72e1-b126-6ce81dcf289c",
+          "name": "A110 (2017)",
+          "names": { "en": "A110 (2017)", "es": "A110 (2017)", "ja": "A110 (2017)" },
+          "years": { "from": 2018 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "autotrader-a110-gt4-geneva-2018",
+      "method": "published",
+      "source": "Auto Trader UK, Three new Alpine A110s revealed at the 2018 Geneva Motor Show (March 2018)",
+      "url": "https://www.autotrader.co.uk/content/news/three-new-alpine-a110s-revealed-at-the-2018-geneva-motor-show",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The A110 GT4, a race version of the A110 launched in 2017 prepared by Signatech, was presented at Geneva in March 2018 with the first customer cars racing that year."
+    },
+    {
+      "id": "alpine-uk-a110-gt4-evo",
+      "method": "official",
+      "source": "Alpine Cars UK, Competition: A110 GT4 Evo",
+      "url": "https://alpine-cars.co.uk/competition/a110-gt4.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Alpine and Signatech developed the A110 GT4 Evo, an update of the same car."
+    },
+    {
+      "id": "racecar-a110-gt4-plus-2025",
+      "method": "published",
+      "source": "Racecar Engineering, Alpine reveals the A110 GT4+ (March 2025)",
+      "url": "https://www.racecar.com/news/101537/motorsport/alpine-reveals-the-a110-gt4",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The A110 GT4+ of 2025 is an evolution of the A110 GT4 Evo (2022), with an upgrade kit for existing A110 GT4 and GT4 Evo cars. The Evo and the GT4+ are updates of the same race car and stay in this generation, which is still on sale."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Alpine (Q26944), Alpine A110 (2017) (Q24936559)",
+      "url": "https://www.wikidata.org/wiki/Q24936559",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model. The model is linked to the item of the A110 launched in 2017; the original A110 of 1961 has its own item (Q741857). The generation id gen2 leaves gen1 for that first A110."
+    }
+  ]
+}
