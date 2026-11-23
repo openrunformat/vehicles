@@ -1,0 +1,78 @@
+{
+  "uid": "01a20a95-3925-7704-8fda-47c43d9d888f",
+  "id": "renault/clio",
+  "make": {
+    "id": "renault",
+    "name": "Renault",
+    "external": [
+      { "system": "wikidata", "id": "Q6686", "scope": "make" }
+    ]
+  },
+  "name": "Clio",
+  "names": { "en": "Clio", "es": "Clio", "ja": "ルーテシア" },
+  "external": [
+    { "system": "wikidata", "id": "Q309258", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "cup",
+      "name": "Cup",
+      "names": { "en": "Cup", "es": "Cup", "ja": "Cup" },
+      "generations": [
+        {
+          "id": "gen4",
+          "uid": "01a20a95-393f-7e6d-a487-3b16818e1ede",
+          "name": "Clio IV",
+          "names": { "en": "Clio IV", "es": "Clio IV", "ja": "Clio IV" },
+          "years": { "from": 2013, "to": 2019 }
+        },
+        {
+          "id": "gen5",
+          "uid": "01a20a95-3958-71b5-8296-35854680955f",
+          "name": "Clio V",
+          "names": { "en": "Clio V", "es": "Clio V", "ja": "Clio V" },
+          "years": { "from": 2020 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "renault-clio-cup-iv-2012",
+      "method": "official",
+      "source": "Renault Sport, Clio Cup website: The new Clio Cup makes its entrance (30 September 2012)",
+      "url": "https://www.cliocup.fr/The-new-Clio-Cup-makes-its.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Race version of the new Clio Renaultsport 200 EDC (fourth generation of the Clio), built at the Alpine factory in Dieppe; first season in 2013."
+    },
+    {
+      "id": "renault-clio-cup-v-2019",
+      "method": "official",
+      "source": "Renault Sport Racing, Clio Cup website: New Clio Cup, Rally and RX available to order (8 November 2019)",
+      "url": "https://www.cliocup.fr/new-clio-cup-rally-and-rx-available-to-order.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "New generation of the Clio Cup, based on the fifth Clio with the 1.3 litre turbo engine; orders from November 2019 and deliveries from the first quarter of 2020. Used as the start of the Clio V generation and as the end of the Clio IV one."
+    },
+    {
+      "id": "renault-clio-cup-v-2019-reveal",
+      "method": "official",
+      "source": "Renault Sport Racing, Clio Cup website: Clio Cup, Clio Rally, Clio RX: variations on the same theme (22 June 2019)",
+      "url": "https://www.cliocup.fr/clio-cup-clio-rally-clio-rx-variations-on-the-same-theme.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Presentation of the Clio V based Clio Cup at the 2019 French Grand Prix."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Renault (Q6686), Renault Clio (Q309258), Renault Clio IV (Q3425021), Renault Clio V (Q48756503)",
+      "url": "https://www.wikidata.org/wiki/Q309258",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model; the generation names Clio IV and Clio V follow the items of each generation."
+    }
+  ]
+}
