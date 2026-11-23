@@ -1,0 +1,62 @@
+{
+  "uid": "01a20a95-3af0-7089-afda-d7983a93e7bd",
+  "id": "hyundai/accent",
+  "make": {
+    "id": "hyundai",
+    "name": "Hyundai",
+    "external": [
+      { "system": "wikidata", "id": "Q55931", "scope": "make" }
+    ]
+  },
+  "name": "Accent",
+  "names": { "en": "Accent", "es": "Accent", "ja": "アクセント" },
+  "external": [
+    { "system": "wikidata", "id": "Q482410", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "base",
+      "name": "Base",
+      "names": { "en": "Base", "es": "Base", "ja": "ベース" },
+      "generations": [
+        {
+          "id": "gen1",
+          "uid": "01a20a95-3b09-7053-81aa-a84d396d71b2",
+          "name": "First generation",
+          "names": { "en": "First generation", "es": "Primera generación", "ja": "第1世代" },
+          "years": { "from": 1994, "to": 1999 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "hyundai-history-accent",
+      "method": "official",
+      "source": "Hyundai Motor Company, Vehicle history: ACCENT",
+      "url": "https://www.hyundai.com/worldwide/en/footer/corporate/vehicle-history/1990/accent",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The Accent was launched in 1994: start of the first generation."
+    },
+    {
+      "id": "hyundai-ph-history-1967-2000",
+      "method": "official",
+      "source": "Hyundai Philippines, Hyundai history 1967-2000",
+      "url": "https://www.hyundai.com/ph/en/hyundai-story/about-hyundai/history/history-1967-2000",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Launch of the Accent in 1994 and of the Verna in 1999. The Verna is the second-generation Accent (sold as Accent in export markets), so the first generation ends in 1999."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Hyundai Motor Company (Q55931), Hyundai Accent (Q482410)",
+      "url": "https://www.wikidata.org/wiki/Q482410",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model."
+    }
+  ]
+}
