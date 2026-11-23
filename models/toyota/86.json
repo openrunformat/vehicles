@@ -1,0 +1,96 @@
+{
+  "uid": "01a20a95-383f-747f-8fc4-47f5e1479b6b",
+  "id": "toyota/86",
+  "make": {
+    "id": "toyota",
+    "name": "Toyota",
+    "external": [
+      { "system": "wikidata", "id": "Q53268", "scope": "make" }
+    ]
+  },
+  "name": "86",
+  "names": { "en": "86", "es": "86", "ja": "86" },
+  "external": [
+    { "system": "wikidata", "id": "Q1138779", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "base",
+      "name": "Base",
+      "names": { "en": "Base", "es": "Base", "ja": "ベース" },
+      "generations": [
+        {
+          "id": "zn6",
+          "uid": "01a20a95-3859-7208-8008-c0ca09f70f63",
+          "name": "ZN6",
+          "names": { "en": "ZN6 (86, GT86)", "es": "ZN6 (86, GT86)", "ja": "ZN6 (86)" },
+          "years": { "from": 2012, "to": 2021 }
+        },
+        {
+          "id": "zn8",
+          "uid": "01a20a95-3873-73b4-b63c-69e5959875eb",
+          "name": "ZN8",
+          "names": { "en": "ZN8 (GR86)", "es": "ZN8 (GR86)", "ja": "ZN8 (GR86)" },
+          "years": { "from": 2021 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "toyota-86-launch-2012",
+      "method": "official",
+      "source": "Toyota Motor Corporation, TMC to Launch Compact Sports Car '86' in Japan in April (news release, 2 February 2012)",
+      "url": "https://global.toyota/en/newsroom/toyota/22693040.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Start of the first generation: on sale in Japan from 6 April 2012."
+    },
+    {
+      "id": "toyota-jp-86-spec-2016",
+      "method": "official",
+      "source": "Toyota Motor Corporation, 86 main specifications (Japan, November 2016)",
+      "url": "https://toyota.jp/pages/contents/86/001_p_010/pdf/spec/86_spec_201611.pdf",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Type designation DBA-ZN6 of the first generation. The 2016 update kept the ZN6 code, so it stays in the same generation."
+    },
+    {
+      "id": "toyota-gr86-debut-2021",
+      "method": "official",
+      "source": "Toyota Motor Corporation, TOYOTA GAZOO Racing Presents World Debut of the New GR 86 (news release, 5 April 2021)",
+      "url": "https://global.toyota/en/newsroom/toyota/34997138.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The second generation, named GR86, replaces the 86 (GT86 in Europe); developed together with Subaru."
+    },
+    {
+      "id": "toyota-gr86-launch-2021",
+      "method": "official",
+      "source": "Toyota Motor Corporation, TOYOTA GAZOO Racing Launches the All-New GR86 (news release, 28 October 2021)",
+      "url": "https://global.toyota/en/newsroom/toyota/36247827.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Start of the second generation: on sale in Japan from 28 October 2021. Used as the end of the first generation, which it replaced the same year."
+    },
+    {
+      "id": "toyota-jp-gr86-spec-2026",
+      "method": "official",
+      "source": "Toyota Motor Corporation, GR86 main specifications (Japan, August 2026)",
+      "url": "https://toyota.jp/pages/contents/gr86/001_p_001/pdf/gr86_spec_202608.pdf",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Type designation 3BA-ZN8 of the second generation, still on sale."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Toyota (Q53268), Toyota 86 (Q1138779), Toyota GR86 (Q106388685)",
+      "url": "https://www.wikidata.org/wiki/Q1138779",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model; the GR86 has its own item, not linked here because it is a generation of this model."
+    }
+  ]
+}

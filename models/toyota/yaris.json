@@ -1,0 +1,89 @@
+{
+  "uid": "01a20a95-388c-7ea7-838b-debbd904b201",
+  "id": "toyota/yaris",
+  "make": {
+    "id": "toyota",
+    "name": "Toyota",
+    "external": [
+      { "system": "wikidata", "id": "Q53268", "scope": "make" }
+    ]
+  },
+  "name": "Yaris",
+  "names": { "en": "Yaris", "es": "Yaris", "ja": "ヤリス" },
+  "external": [
+    { "system": "wikidata", "id": "Q6902966", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "gr",
+      "name": "GR",
+      "names": { "en": "GR", "es": "GR", "ja": "GR" },
+      "generations": [
+        {
+          "id": "gxpa16",
+          "uid": "01a20a95-38a5-7453-8737-71465752aa3f",
+          "name": "GXPA16",
+          "names": { "en": "GXPA16", "es": "GXPA16", "ja": "GXPA16" },
+          "years": { "from": 2020 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "toyota-gr-yaris-premiere-2020",
+      "method": "official",
+      "source": "Toyota Motor Corporation, Toyota Premieres GR Yaris (news release, 10 January 2020)",
+      "url": "https://global.toyota/en/newsroom/toyota/30976389.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The GR Yaris is the TOYOTA GAZOO Racing version of the Yaris."
+    },
+    {
+      "id": "toyota-gr-yaris-launch-2020",
+      "method": "official",
+      "source": "Toyota Motor Corporation, Toyota Celebrates Launch of New GR Yaris in Japan with Virtual Event (news release, September 2020)",
+      "url": "https://global.toyota/en/newsroom/toyota/33517029.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Start of the generation: on sale in Japan from 4 September 2020."
+    },
+    {
+      "id": "toyota-gr-yaris-evolved-2024",
+      "method": "official",
+      "source": "TOYOTA GAZOO Racing, Sales of Evolved GR Yaris to Start in April (news release, 21 March 2024)",
+      "url": "https://toyotagazooracing.com/pressrelease/2024/0321-01/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Mid-cycle update of the GR Yaris, presented in January 2024 and on sale in Japan from 8 April 2024."
+    },
+    {
+      "id": "toyota-gr-yaris-evolved-2025",
+      "method": "official",
+      "source": "Toyota Motor Corporation, TGR to Launch Evolved GR Yaris (news release, 11 April 2025)",
+      "url": "https://global.toyota/en/newsroom/toyota/42579162.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Further partial upgrade from May 2025, with the eight-speed GR-DAT automatic. The type designation stays GXPA16, so the 2024 and 2025 updates stay in the same generation."
+    },
+    {
+      "id": "toyota-jp-gr-yaris-spec-2025",
+      "method": "official",
+      "source": "Toyota Motor Corporation, GR Yaris main specifications (Japan, October 2025)",
+      "url": "https://toyota.jp/pages/contents/gryaris/001_p_002/pdf/gryaris_spec_202510.pdf",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Type designation 4BA-GXPA16 of the updated car, the same code as the first cars."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Toyota (Q53268), Toyota Yaris (Q6902966), Toyota GR Yaris (Q96335350)",
+      "url": "https://www.wikidata.org/wiki/Q96335350",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model; the GR Yaris item describes it as a variant of the Yaris."
+    }
+  ]
+}
