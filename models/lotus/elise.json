@@ -1,0 +1,67 @@
+{
+  "uid": "01a20a95-3a5a-7700-9e69-88e550a8ac67",
+  "id": "lotus/elise",
+  "make": {
+    "id": "lotus",
+    "name": "Lotus",
+    "external": [
+      { "system": "wikidata", "id": "Q35935", "scope": "make" }
+    ]
+  },
+  "name": "Elise",
+  "names": { "en": "Elise", "es": "Elise", "ja": "エリーゼ" },
+  "external": [
+    { "system": "wikidata", "id": "Q1131622", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "base",
+      "name": "Base",
+      "names": { "en": "Base", "es": "Base", "ja": "ベース" },
+      "generations": [
+        {
+          "id": "s1",
+          "uid": "01a20a95-3a73-7048-a7b3-0fbe59d49fd6",
+          "name": "Series 1",
+          "names": { "en": "Series 1", "es": "Serie 1", "ja": "シリーズ1" },
+          "years": { "from": 1996, "to": 2001 }
+        },
+        {
+          "id": "s2",
+          "uid": "01a20a95-3a8c-72e3-9064-610410653b0f",
+          "name": "Series 2",
+          "names": { "en": "Series 2", "es": "Serie 2", "ja": "シリーズ2" },
+          "years": { "from": 2000, "to": 2010 }
+        },
+        {
+          "id": "s3",
+          "uid": "01a20a95-3aa5-7629-9636-cd3e68168d2c",
+          "name": "Series 3",
+          "names": { "en": "Series 3", "es": "Serie 3", "ja": "シリーズ3" },
+          "years": { "from": 2010, "to": 2021 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "lotus-story-elise",
+      "method": "official",
+      "source": "Lotus Cars, The Lotus Story: Elise",
+      "url": "https://www.lotuscars.com/en-GB/lotus-story/elise",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "First Elise shown at Frankfurt in September 1995 and built from 1996; second generation introduced at the Birmingham Motor Show in October 2000; the next update was announced at the 2010 Geneva motor show (2011 model year), built from 2010 until the end of Elise production in 2021. The first generation ends in 2001, after its successor was introduced; the second in 2010."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Lotus Cars (Q35935), Lotus Elise (Q1131622), Lotus Elise (Series 2) (Q90998561), Lotus Elise (Series 3) (Q134283058)",
+      "url": "https://www.wikidata.org/wiki/Q1131622",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model; the generation names Series 2 and Series 3 follow the items of each generation."
+    }
+  ]
+}
