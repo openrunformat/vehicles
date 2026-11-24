@@ -1,0 +1,248 @@
+{
+  "uid": "01a20fe8-74af-7112-99ea-36e74abb88fb",
+  "id": "ford/focus",
+  "make": {
+    "id": "ford",
+    "name": "Ford",
+    "external": [
+      { "system": "wikidata", "id": "Q44294", "scope": "make" }
+    ]
+  },
+  "name": "Focus",
+  "names": { "en": "Focus", "es": "Focus", "ja": "フォーカス" },
+  "external": [
+    { "system": "wikidata", "id": "Q209029", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "rs",
+      "name": "RS",
+      "names": { "en": "RS", "es": "RS", "ja": "RS" },
+      "generations": [
+        {
+          "id": "mk1",
+          "uid": "01a20fe8-7ac5-714d-806e-c615604caafd",
+          "name": "Focus RS Mk1",
+          "names": { "en": "Focus RS Mk1", "es": "Focus RS Mk1", "ja": "Focus RS Mk1" },
+          "years": { "from": 2002, "to": 2003 }
+        },
+        {
+          "id": "mk2",
+          "uid": "01a20fe8-8122-7dcf-952c-9c5332427f2b",
+          "name": "Focus RS Mk2",
+          "names": { "en": "Focus RS Mk2", "es": "Focus RS Mk2", "ja": "Focus RS Mk2" },
+          "years": { "from": 2009, "to": 2010 },
+          "stock": {
+            "wheelDiameterIn": 19
+          }
+        },
+        {
+          "id": "mk3",
+          "uid": "01a20fe8-8729-7411-b2e0-05f9350c6c9f",
+          "name": "Focus RS Mk3",
+          "names": { "en": "Focus RS Mk3", "es": "Focus RS Mk3", "ja": "Focus RS Mk3" },
+          "years": { "from": 2016, "to": 2018 },
+          "stock": {
+            "wheelDiameterIn": 19,
+            "driveModes": [
+              { "id": "normal", "name": { "en": "Normal", "es": "Normal", "ja": "Normal" } },
+              { "id": "sport", "name": { "en": "Sport", "es": "Sport", "ja": "Sport" } },
+              { "id": "track", "name": { "en": "Track", "es": "Track", "ja": "Track" } },
+              { "id": "drift", "name": { "en": "Drift", "es": "Drift", "ja": "Drift" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "st",
+      "name": "ST",
+      "names": { "en": "ST", "es": "ST", "ja": "ST" },
+      "generations": [
+        {
+          "id": "mk1",
+          "uid": "01a20fe8-8d40-7ed5-9574-301dd3da6cb9",
+          "name": "Focus ST170 Mk1",
+          "names": { "en": "Focus ST170 Mk1", "es": "Focus ST170 Mk1", "ja": "Focus ST170 Mk1" },
+          "years": { "from": 2002 }
+        },
+        {
+          "id": "mk2",
+          "uid": "01a20fe8-9353-732b-9a85-091e0a1a2a83",
+          "name": "Focus ST Mk2",
+          "names": { "en": "Focus ST Mk2", "es": "Focus ST Mk2", "ja": "Focus ST Mk2" },
+          "years": { "from": 2005, "to": 2010 }
+        },
+        {
+          "id": "mk3",
+          "uid": "01a20fe8-9980-767e-bbfc-76b0dfabab6b",
+          "name": "Focus ST Mk3",
+          "names": { "en": "Focus ST Mk3", "es": "Focus ST Mk3", "ja": "Focus ST Mk3" },
+          "years": { "from": 2012, "to": 2018 }
+        },
+        {
+          "id": "mk4",
+          "uid": "01a20fe8-9fa3-70a3-bb0e-1364e142eb48",
+          "name": "Focus ST Mk4",
+          "names": { "en": "Focus ST Mk4", "es": "Focus ST Mk4", "ja": "Focus ST Mk4" },
+          "years": { "from": 2019, "to": 2025 },
+          "stock": {
+            "driveModes": [
+              { "id": "slippery_wet", "name": { "en": "Slippery/Wet", "es": "Slippery/Wet", "ja": "Slippery/Wet" } },
+              { "id": "normal", "name": { "en": "Normal", "es": "Normal", "ja": "Normal" } },
+              { "id": "sport", "name": { "en": "Sport", "es": "Sport", "ja": "Sport" } },
+              { "id": "track", "name": { "en": "Track", "es": "Track", "ja": "Track" } }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "ford-focus-10-years-2008",
+      "method": "official",
+      "source": "Ford of Europe, 10 years Ford Focus (anniversary press kit booklet, 2008), archived copy of fordmedia.eu",
+      "url": "https://web.archive.org/web/20120220121851/http://www.fordmedia.eu/presskits/2008anniversaries/Booklet_Focus.pdf",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "The Focus ST170 came first in 2002 and the Focus RS followed in 2002; the 2005 Focus ST is the second generation of the ST; the new (second) Focus RS was due for launch early in 2009. Used for the start years of RS Mk1, ST Mk1 (ST170), ST Mk2 and RS Mk2."
+    },
+    {
+      "id": "ford-focus-rs-2009-presskit",
+      "method": "official",
+      "source": "Ford of Europe, 2009 Ford Focus RS press kit page on fordmedia.eu, archived copy",
+      "url": "https://web.archive.org/web/20150321005818/http://www.fordmedia.eu/project/2009-ford-focus-rs/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "Ford calls the first car the 'Mk1 Focus RS' and says six years had passed since it finished its strictly limited production run: end of RS Mk1 in 2003."
+    },
+    {
+      "id": "ford-focus-rs-geneva-2009",
+      "method": "official",
+      "source": "Ford of Europe, Geneva Motor Show 2009 press kit: new Ford Focus RS, archived copy of fordmedia.eu",
+      "url": "https://web.archive.org/web/20120305042900/http://www.fordmedia.eu/presskits/geneva2009/content/focusRSContent.php",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "Second Focus RS shown in final production form at Geneva in March 2009, the RS badge returning after six years; built on the main Focus line in Saarlouis. Stock wheels: 19-inch alloy wheels. Ford also mentions a 2008 production start; the generation starts in 2009, the year of the market launch, as other files of the registry use market years."
+    },
+    {
+      "id": "evo-focus-rs500-2010",
+      "method": "published",
+      "source": "evo, Ford Focus RS500 revealed (29 March 2010)",
+      "url": "https://www.evo.co.uk/ford/focus-rs/11057/ford-focus-rs500-revealed",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "The RS500 is a limited run of 500 cars marking the end of Focus RS production, built at Saarlouis from May to September 2010, with more power than the standard RS and otherwise changes limited to engine and trim. End of RS Mk2 in 2010. The RS500 is not a separate variant here: Ford presented it as a limited edition of the Focus RS built on the same line at the end of the same generation, with the same chassis, so a setup template or modification that fits the Mk2 RS fits the RS500 too; it belongs to rs@mk2."
+    },
+    {
+      "id": "ford-focus-rs-2015",
+      "method": "official",
+      "source": "Ford of Europe, Ford Reveals All-New Focus RS Sprints to 100 km/h in 4.7 Seconds (press release, 16 September 2015), archived copy of media.ford.com",
+      "url": "https://web.archive.org/web/20251018043049/https://media.ford.com/content/fordmedia/feu/en/news/2015/09/16/ford-reveals-all-new-focus-rs-sprints-to-100-km-h-in-4-7-seconds.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "Drive modes of the third Focus RS: Normal, Sport and Track, plus Drift Mode. Built in Saarlouis; deliveries to European customers from early 2016 (start of RS Mk3)."
+    },
+    {
+      "id": "ford-uk-focus-rs-brochure-2017",
+      "method": "official",
+      "source": "Ford Britain, Focus RS brochure, model year 2017 (August 2016)",
+      "url": "https://www.ford.co.uk/content/dam/guxeu/uk/documents/brochures/cars/BRO-Focus_RS.pdf",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "Standard 19-inch 20-spoke alloy wheels, optional 19-inch forged alloy wheels: stock wheel diameter 19 inches for RS Mk3. Four selectable drive modes."
+    },
+    {
+      "id": "autoexpress-focus-rs-heritage",
+      "method": "published",
+      "source": "Auto Express, New £40k Ford Focus RS Heritage Edition marks production end",
+      "url": "https://www.autoexpress.co.uk/ford/focus/102644/new-40k-ford-focus-rs-heritage-edition-marks-production-end",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "The third Focus RS was on sale from 2016 to 2018; the Heritage Edition marked the end of its production."
+    },
+    {
+      "id": "thedrive-focus-rs-end-2018",
+      "method": "published",
+      "source": "The Drive, The Current Ford Focus RS Will Cease Production April 6, 2018 (14 February 2018)",
+      "url": "https://www.thedrive.com/news/18487/the-current-ford-focus-rs-will-cease-production-april-6-2018",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "Production of the third Focus RS ended on 6 April 2018: end of RS Mk3."
+    },
+    {
+      "id": "evo-focus-st170",
+      "method": "published",
+      "source": "evo, Ford Focus ST170: review, history, prices and specs",
+      "url": "https://www.evo.co.uk/ford/focus/20985/ford-focus-st170-review-history-prices-and-specs",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "The ST170 made its debut in spring 2002. No end of production or sales was found in an official or other acceptable source (published years vary between 2004 and 2005), so the ST Mk1 generation is left open even though it is no longer built. Its stock 17-inch wheels are given only in this review, not in a Ford source, and are left out."
+    },
+    {
+      "id": "ford-focus-st-2014",
+      "method": "official",
+      "source": "Ford of Europe, Ford Reveals New Focus ST (press release, 27 June 2014), archived copy of media.ford.com",
+      "url": "https://web.archive.org/web/20250816075454/https://media.ford.com/content/fordmedia/feu/en/news/2014/06/27/ford-reveals-new-focus-st--demonstrates-performance--enhanced-dr.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "Ford counts the Focus ST as first launched in 2002, so the ST170 is the first generation of the ST variant. Mid-cycle update of the third ST (in dealerships from early 2015): same generation. Its 19-inch wheels are optional, so no stock wheel diameter is recorded for ST Mk3."
+    },
+    {
+      "id": "pistonheads-focus-st-mk2",
+      "method": "published",
+      "source": "PistonHeads, Ford Focus ST (Mk2) | PH Used Buying Guide (22 February 2020)",
+      "url": "https://www.pistonheads.com/news/ph-buying-guides/ford-focus-st-mk2--ph-used-buying-guide/41899",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "On sale 2005 to 2010, facelift in 2008 (same generation): years of ST Mk2."
+    },
+    {
+      "id": "ford-focus-st-media-drive-2012",
+      "method": "official",
+      "source": "Ford of Europe, Ford Focus ST Media Drive 2012 press kit page on fordmedia.eu, archived copy",
+      "url": "https://web.archive.org/web/20170928220602/http://www.fordmedia.eu/project/ford-focus-st-media-drive-2012/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "The 2012 Focus ST, Ford's first global performance car: start of ST Mk3."
+    },
+    {
+      "id": "pistonheads-focus-st-mk3",
+      "method": "published",
+      "source": "PistonHeads, Ford Focus ST (Mk3) | PH Used Buying Guide (6 July 2020)",
+      "url": "https://www.pistonheads.com/news/ph-buying-guides/ford-focus-st-mk3--ph-used-buying-guide/42709",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "Built from 2012 to 2018, refreshed in late 2014 (same generation): years of ST Mk3."
+    },
+    {
+      "id": "ford-focus-st-2019",
+      "method": "official",
+      "source": "Ford of Europe, All-New Ford Focus ST Blends Track-Day Performance, B-road Fun and Everyday Usability Without Compromise (press release, 18 February 2019), archived copy of media.ford.com",
+      "url": "https://web.archive.org/web/20260115144031/https://media.ford.com/content/fordmedia/feu/en/news/2019/02/18/all-new-ford-focus-st-blends-track-day-performance--b-road-fun-a.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "Fourth-generation Focus ST built in Saarlouis, on sale across Europe in summer 2019 (start of ST Mk4); selectable drive modes on the ST for the first time: Slippery/Wet, Normal, Sport and, on cars with the Performance Pack, Track. Wheels of 18 or 19 inches are offered, so no stock wheel diameter is recorded."
+    },
+    {
+      "id": "motor1-focus-end-2025",
+      "method": "published",
+      "source": "Motor1, Ford Focus production ends (17 November 2025)",
+      "url": "https://www.motor1.com/news/779127/ford-focus-production-ends-official/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "Ford of Europe confirmed that the last Focus was built on 14 November 2025; the last Focus ST was built on 26 September 2025: end of ST Mk4."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Ford Motor Company (Q44294), Ford Focus (Q209029), Ford Focus RS (Q4180769), Ford Focus ST (Q11698416), Ford Focus RS500 (Q9261318), Ford Focus Mk I (Q5467780), Ford Focus Mk II (Q5467779), Ford Focus Mk III (Q4038895), Ford Focus 4th generation (Q90020491)",
+      "url": "https://www.wikidata.org/wiki/Q209029",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-25",
+      "notes": "External ids of the make and the model; the Mk I to Mk III generation names follow the generation items. Wikidata keeps a separate RS500 item, but it only names the car and its maker; see evo-focus-rs500-2010 for why the RS500 is part of rs@mk2."
+    }
+  ]
+}
