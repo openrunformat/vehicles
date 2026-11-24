@@ -1,9 +1,203 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-23T22:04:28Z",
+  "generatedAt": "2026-11-24T03:24:33Z",
   "source": "https://github.com/openrunformat/vehicles",
   "licence": "CC0-1.0",
   "models": [
+    {
+      "id": "alpine/a110",
+      "uid": "01a20a95-3973-7d72-9f97-0125084206a3",
+      "make": {
+        "id": "alpine",
+        "name": "Alpine",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q26944",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "A110",
+      "names": {
+        "en": "A110",
+        "es": "A110",
+        "ja": "A110"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q24936559",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "gt4",
+          "name": "GT4",
+          "names": {
+            "en": "GT4",
+            "es": "GT4",
+            "ja": "GT4"
+          },
+          "generations": [
+            {
+              "id": "gen2",
+              "fullId": "alpine/a110/gt4@gen2",
+              "uid": "01a20a95-398d-72e1-b126-6ce81dcf289c",
+              "name": "A110 (2017)",
+              "names": {
+                "en": "A110 (2017)",
+                "es": "A110 (2017)",
+                "ja": "A110 (2017)"
+              },
+              "years": {
+                "from": 2018,
+                "to": null
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "audi/rs-3",
+      "uid": "01a20a95-39a6-7362-b39d-4031d5015203",
+      "make": {
+        "id": "audi",
+        "name": "Audi",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q23317",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "RS 3",
+      "names": {
+        "en": "RS 3",
+        "es": "RS 3",
+        "ja": "RS 3"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q2120055",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "lms",
+          "name": "LMS",
+          "names": {
+            "en": "LMS",
+            "es": "LMS",
+            "ja": "LMS"
+          },
+          "generations": [
+            {
+              "id": "gen1",
+              "fullId": "audi/rs-3/lms@gen1",
+              "uid": "01a20a95-39c0-7257-b0a2-8bd2ca86ff39",
+              "name": "First generation (A3 8V)",
+              "names": {
+                "en": "First generation (A3 8V)",
+                "es": "Primera generación (A3 8V)",
+                "ja": "第1世代 (A3 8V)"
+              },
+              "years": {
+                "from": 2016,
+                "to": 2020
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "gen2",
+              "fullId": "audi/rs-3/lms@gen2",
+              "uid": "01a20a95-39da-73b3-a321-8dfd2cda9109",
+              "name": "Second generation (A3 8Y)",
+              "names": {
+                "en": "Second generation (A3 8Y)",
+                "es": "Segunda generación (A3 8Y)",
+                "ja": "第2世代 (A3 8Y)"
+              },
+              "years": {
+                "from": 2021,
+                "to": null
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "bmw/3-series",
+      "uid": "01a20a95-3b73-79d3-bd5f-c3f2c21bf0d6",
+      "make": {
+        "id": "bmw",
+        "name": "BMW",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q26678",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "3 Series",
+      "names": {
+        "en": "3 Series",
+        "es": "Serie 3",
+        "ja": "3シリーズ"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q466066",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "base",
+          "name": "Base",
+          "names": {
+            "en": "Base",
+            "es": "Base",
+            "ja": "ベース"
+          },
+          "generations": [
+            {
+              "id": "e36",
+              "fullId": "bmw/3-series/base@e36",
+              "uid": "01a20a95-3b8e-71ab-9087-649be6d56618",
+              "name": "E36",
+              "names": {
+                "en": "E36",
+                "es": "E36",
+                "ja": "E36"
+              },
+              "years": {
+                "from": 1990,
+                "to": 1998
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
     {
       "id": "honda/civic",
       "uid": "01a1b586-bd43-7af7-b02f-d87e45b245eb",
@@ -197,6 +391,740 @@
                 ]
               },
               "template": "honda-civic-type-r-fl5"
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "honda/s2000",
+      "uid": "01a20a95-3b23-7204-86ce-22fbf202b181",
+      "make": {
+        "id": "honda",
+        "name": "Honda",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q9584",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "S2000",
+      "names": {
+        "en": "S2000",
+        "es": "S2000",
+        "ja": "S2000"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q913796",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "base",
+          "name": "Base",
+          "names": {
+            "en": "Base",
+            "es": "Base",
+            "ja": "ベース"
+          },
+          "generations": [
+            {
+              "id": "ap1",
+              "fullId": "honda/s2000/base@ap1",
+              "uid": "01a20a95-3b3c-7f70-a83f-31dd3f1e59bf",
+              "name": "AP1",
+              "names": {
+                "en": "AP1",
+                "es": "AP1",
+                "ja": "AP1"
+              },
+              "years": {
+                "from": 1999,
+                "to": 2005
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "ap2",
+              "fullId": "honda/s2000/base@ap2",
+              "uid": "01a20a95-3b56-792b-926c-648905a90b13",
+              "name": "AP2",
+              "names": {
+                "en": "AP2",
+                "es": "AP2",
+                "ja": "AP2"
+              },
+              "years": {
+                "from": 2005,
+                "to": 2009
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "hyundai/accent",
+      "uid": "01a20a95-3af0-7089-afda-d7983a93e7bd",
+      "make": {
+        "id": "hyundai",
+        "name": "Hyundai",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q55931",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "Accent",
+      "names": {
+        "en": "Accent",
+        "es": "Accent",
+        "ja": "アクセント"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q482410",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "base",
+          "name": "Base",
+          "names": {
+            "en": "Base",
+            "es": "Base",
+            "ja": "ベース"
+          },
+          "generations": [
+            {
+              "id": "gen1",
+              "fullId": "hyundai/accent/base@gen1",
+              "uid": "01a20a95-3b09-7053-81aa-a84d396d71b2",
+              "name": "First generation",
+              "names": {
+                "en": "First generation",
+                "es": "Primera generación",
+                "ja": "第1世代"
+              },
+              "years": {
+                "from": 1994,
+                "to": 1999
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "hyundai/tiburon",
+      "uid": "01a20a95-3abe-73b7-9291-e4c117be7812",
+      "make": {
+        "id": "hyundai",
+        "name": "Hyundai",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q55931",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "Tiburon",
+      "names": {
+        "en": "Tiburon",
+        "es": "Coupe",
+        "ja": "ティブロン"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q482596",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "base",
+          "name": "Base",
+          "names": {
+            "en": "Base",
+            "es": "Base",
+            "ja": "ベース"
+          },
+          "generations": [
+            {
+              "id": "gen1",
+              "fullId": "hyundai/tiburon/base@gen1",
+              "uid": "01a20a95-3ad7-7ebb-912e-84a5e9bf7f0c",
+              "name": "First generation",
+              "names": {
+                "en": "First generation",
+                "es": "Primera generación",
+                "ja": "第1世代"
+              },
+              "years": {
+                "from": 1996,
+                "to": 2001
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "lotus/elise",
+      "uid": "01a20a95-3a5a-7700-9e69-88e550a8ac67",
+      "make": {
+        "id": "lotus",
+        "name": "Lotus",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q35935",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "Elise",
+      "names": {
+        "en": "Elise",
+        "es": "Elise",
+        "ja": "エリーゼ"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q1131622",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "base",
+          "name": "Base",
+          "names": {
+            "en": "Base",
+            "es": "Base",
+            "ja": "ベース"
+          },
+          "generations": [
+            {
+              "id": "s1",
+              "fullId": "lotus/elise/base@s1",
+              "uid": "01a20a95-3a73-7048-a7b3-0fbe59d49fd6",
+              "name": "Series 1",
+              "names": {
+                "en": "Series 1",
+                "es": "Serie 1",
+                "ja": "シリーズ1"
+              },
+              "years": {
+                "from": 1996,
+                "to": 2001
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "s2",
+              "fullId": "lotus/elise/base@s2",
+              "uid": "01a20a95-3a8c-72e3-9064-610410653b0f",
+              "name": "Series 2",
+              "names": {
+                "en": "Series 2",
+                "es": "Serie 2",
+                "ja": "シリーズ2"
+              },
+              "years": {
+                "from": 2000,
+                "to": 2010
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "s3",
+              "fullId": "lotus/elise/base@s3",
+              "uid": "01a20a95-3aa5-7629-9636-cd3e68168d2c",
+              "name": "Series 3",
+              "names": {
+                "en": "Series 3",
+                "es": "Serie 3",
+                "ja": "シリーズ3"
+              },
+              "years": {
+                "from": 2010,
+                "to": 2021
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "mercedes-amg/gt",
+      "uid": "01a20a95-39f4-7288-a390-6dc3eb321600",
+      "make": {
+        "id": "mercedes-amg",
+        "name": "Mercedes-AMG",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q26966",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "GT",
+      "names": {
+        "en": "GT",
+        "es": "GT",
+        "ja": "GT"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q18011551",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "gt4",
+          "name": "GT4",
+          "names": {
+            "en": "GT4",
+            "es": "GT4",
+            "ja": "GT4"
+          },
+          "generations": [
+            {
+              "id": "gen1",
+              "fullId": "mercedes-amg/gt/gt4@gen1",
+              "uid": "01a20a95-3a0e-756d-89db-0691bb281a9f",
+              "name": "First generation",
+              "names": {
+                "en": "First generation",
+                "es": "Primera generación",
+                "ja": "第1世代"
+              },
+              "years": {
+                "from": 2017,
+                "to": null
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "peugeot/308",
+      "uid": "01a20a95-3a28-79d5-83a0-91b8123b42b4",
+      "make": {
+        "id": "peugeot",
+        "name": "Peugeot",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q6742",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "308",
+      "names": {
+        "en": "308",
+        "es": "308",
+        "ja": "308"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q497858",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "racing-cup",
+          "name": "Racing Cup",
+          "names": {
+            "en": "Racing Cup",
+            "es": "Racing Cup",
+            "ja": "Racing Cup"
+          },
+          "generations": [
+            {
+              "id": "gen2",
+              "fullId": "peugeot/308/racing-cup@gen2",
+              "uid": "01a20a95-3a41-703f-b06f-a24225466bf1",
+              "name": "308 II",
+              "names": {
+                "en": "308 II",
+                "es": "308 II",
+                "ja": "308 II"
+              },
+              "years": {
+                "from": 2016,
+                "to": null
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "renault/clio",
+      "uid": "01a20a95-3925-7704-8fda-47c43d9d888f",
+      "make": {
+        "id": "renault",
+        "name": "Renault",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q6686",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "Clio",
+      "names": {
+        "en": "Clio",
+        "es": "Clio",
+        "ja": "ルーテシア"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q309258",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "cup",
+          "name": "Cup",
+          "names": {
+            "en": "Cup",
+            "es": "Cup",
+            "ja": "Cup"
+          },
+          "generations": [
+            {
+              "id": "gen4",
+              "fullId": "renault/clio/cup@gen4",
+              "uid": "01a20a95-393f-7e6d-a487-3b16818e1ede",
+              "name": "Clio IV",
+              "names": {
+                "en": "Clio IV",
+                "es": "Clio IV",
+                "ja": "Clio IV"
+              },
+              "years": {
+                "from": 2013,
+                "to": 2019
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "gen5",
+              "fullId": "renault/clio/cup@gen5",
+              "uid": "01a20a95-3958-71b5-8296-35854680955f",
+              "name": "Clio V",
+              "names": {
+                "en": "Clio V",
+                "es": "Clio V",
+                "ja": "Clio V"
+              },
+              "years": {
+                "from": 2020,
+                "to": null
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "toyota/86",
+      "uid": "01a20a95-383f-747f-8fc4-47f5e1479b6b",
+      "make": {
+        "id": "toyota",
+        "name": "Toyota",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q53268",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "86",
+      "names": {
+        "en": "86",
+        "es": "86",
+        "ja": "86"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q1138779",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "base",
+          "name": "Base",
+          "names": {
+            "en": "Base",
+            "es": "Base",
+            "ja": "ベース"
+          },
+          "generations": [
+            {
+              "id": "zn6",
+              "fullId": "toyota/86/base@zn6",
+              "uid": "01a20a95-3859-7208-8008-c0ca09f70f63",
+              "name": "ZN6",
+              "names": {
+                "en": "ZN6 (86, GT86)",
+                "es": "ZN6 (86, GT86)",
+                "ja": "ZN6 (86)"
+              },
+              "years": {
+                "from": 2012,
+                "to": 2021
+              },
+              "stock": null,
+              "template": null
+            },
+            {
+              "id": "zn8",
+              "fullId": "toyota/86/base@zn8",
+              "uid": "01a20a95-3873-73b4-b63c-69e5959875eb",
+              "name": "ZN8",
+              "names": {
+                "en": "ZN8 (GR86)",
+                "es": "ZN8 (GR86)",
+                "ja": "ZN8 (GR86)"
+              },
+              "years": {
+                "from": 2021,
+                "to": null
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "toyota/corolla",
+      "uid": "01a20a95-38bf-7f69-9b9d-a32aa3fa97ba",
+      "make": {
+        "id": "toyota",
+        "name": "Toyota",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q53268",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "Corolla",
+      "names": {
+        "en": "Corolla",
+        "es": "Corolla",
+        "ja": "カローラ"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q243543",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "gr",
+          "name": "GR",
+          "names": {
+            "en": "GR",
+            "es": "GR",
+            "ja": "GR"
+          },
+          "generations": [
+            {
+              "id": "gzea14h",
+              "fullId": "toyota/corolla/gr@gzea14h",
+              "uid": "01a20a95-38d8-767f-867f-868878859186",
+              "name": "GZEA14H",
+              "names": {
+                "en": "GZEA14H",
+                "es": "GZEA14H",
+                "ja": "GZEA14H"
+              },
+              "years": {
+                "from": 2022,
+                "to": null
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "toyota/supra",
+      "uid": "01a20a95-38f2-76af-8ffe-3b55e1bd12a9",
+      "make": {
+        "id": "toyota",
+        "name": "Toyota",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q53268",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "Supra",
+      "names": {
+        "en": "Supra",
+        "es": "Supra",
+        "ja": "スープラ"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q647404",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "base",
+          "name": "Base",
+          "names": {
+            "en": "Base",
+            "es": "Base",
+            "ja": "ベース"
+          },
+          "generations": [
+            {
+              "id": "a90",
+              "fullId": "toyota/supra/base@a90",
+              "uid": "01a20a95-390b-7a81-8255-6e5dc3fa10ea",
+              "name": "A90",
+              "names": {
+                "en": "A90 (GR Supra)",
+                "es": "A90 (GR Supra)",
+                "ja": "A90 (GRスープラ)"
+              },
+              "years": {
+                "from": 2019,
+                "to": 2026
+              },
+              "stock": null,
+              "template": null
+            }
+          ]
+        }
+      ],
+      "attribution": []
+    },
+    {
+      "id": "toyota/yaris",
+      "uid": "01a20a95-388c-7ea7-838b-debbd904b201",
+      "make": {
+        "id": "toyota",
+        "name": "Toyota",
+        "external": [
+          {
+            "system": "wikidata",
+            "id": "Q53268",
+            "scope": "make"
+          }
+        ]
+      },
+      "name": "Yaris",
+      "names": {
+        "en": "Yaris",
+        "es": "Yaris",
+        "ja": "ヤリス"
+      },
+      "external": [
+        {
+          "system": "wikidata",
+          "id": "Q6902966",
+          "scope": "model"
+        }
+      ],
+      "variants": [
+        {
+          "id": "gr",
+          "name": "GR",
+          "names": {
+            "en": "GR",
+            "es": "GR",
+            "ja": "GR"
+          },
+          "generations": [
+            {
+              "id": "gxpa16",
+              "fullId": "toyota/yaris/gr@gxpa16",
+              "uid": "01a20a95-38a5-7453-8737-71465752aa3f",
+              "name": "GXPA16",
+              "names": {
+                "en": "GXPA16",
+                "es": "GXPA16",
+                "ja": "GXPA16"
+              },
+              "years": {
+                "from": 2020,
+                "to": null
+              },
+              "stock": null,
+              "template": null
             }
           ]
         }
