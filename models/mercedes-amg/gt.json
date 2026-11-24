@@ -1,0 +1,62 @@
+{
+  "uid": "01a20a95-39f4-7288-a390-6dc3eb321600",
+  "id": "mercedes-amg/gt",
+  "make": {
+    "id": "mercedes-amg",
+    "name": "Mercedes-AMG",
+    "external": [
+      { "system": "wikidata", "id": "Q26966", "scope": "make" }
+    ]
+  },
+  "name": "GT",
+  "names": { "en": "GT", "es": "GT", "ja": "GT" },
+  "external": [
+    { "system": "wikidata", "id": "Q18011551", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "gt4",
+      "name": "GT4",
+      "names": { "en": "GT4", "es": "GT4", "ja": "GT4" },
+      "generations": [
+        {
+          "id": "gen1",
+          "uid": "01a20a95-3a0e-756d-89db-0691bb281a9f",
+          "name": "First generation",
+          "names": { "en": "First generation", "es": "Primera generación", "ja": "第1世代" },
+          "years": { "from": 2017 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "mercedes-amg-customer-racing-gt4",
+      "method": "official",
+      "source": "Mercedes-AMG Customer Racing: Mercedes-AMG GT4",
+      "url": "https://customerracing.mercedes-amg.com/en/mercedes-amg-gt4",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The Mercedes-AMG GT4 has been part of the Customer Racing range since 2018, its first racing season; it is still offered, with later development stages of the same car."
+    },
+    {
+      "id": "racer-amg-gt4-2017",
+      "method": "published",
+      "source": "RACER, Mercedes-AMG unveils its GT4 (25 July 2017)",
+      "url": "https://racer.com/2017/07/25/mercedes-amg-unveils-its-gt4/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Presented at the 2017 Spa-Francorchamps 24 Hours, based on the Mercedes-AMG GT R, with deliveries to customer teams from the end of 2017: start of the generation."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Mercedes-AMG (Q26966), Mercedes-AMG GT (Q18011551), Mercedes-AMG GT4 (Q44954373)",
+      "url": "https://www.wikidata.org/wiki/Q18011551",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model; the GT4 has its own item, not linked here. The GT4 is based on the first generation of the Mercedes-AMG GT (the GT R); no public chassis code is recorded here, so the generation has a neutral id."
+    }
+  ]
+}

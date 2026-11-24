@@ -1,0 +1,53 @@
+{
+  "uid": "01a20a95-3abe-73b7-9291-e4c117be7812",
+  "id": "hyundai/tiburon",
+  "make": {
+    "id": "hyundai",
+    "name": "Hyundai",
+    "external": [
+      { "system": "wikidata", "id": "Q55931", "scope": "make" }
+    ]
+  },
+  "name": "Tiburon",
+  "names": { "en": "Tiburon", "es": "Coupe", "ja": "ティブロン" },
+  "external": [
+    { "system": "wikidata", "id": "Q482596", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "base",
+      "name": "Base",
+      "names": { "en": "Base", "es": "Base", "ja": "ベース" },
+      "generations": [
+        {
+          "id": "gen1",
+          "uid": "01a20a95-3ad7-7ebb-912e-84a5e9bf7f0c",
+          "name": "First generation",
+          "names": { "en": "First generation", "es": "Primera generación", "ja": "第1世代" },
+          "years": { "from": 1996, "to": 2001 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "hyundai-history-tiburon",
+      "method": "official",
+      "source": "Hyundai Motor Company, Vehicle history: TIBURON",
+      "url": "https://www.hyundai.com/worldwide/en/footer/corporate/vehicle-history/1990/tiburon",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Production period of the first Tiburon: 1996 to 2001."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Hyundai Motor Company (Q55931), Hyundai Tiburon (Q482596)",
+      "url": "https://www.wikidata.org/wiki/Q482596",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model. The item lists Hyundai Coupe as another name of the model, the name used in Europe."
+    }
+  ]
+}

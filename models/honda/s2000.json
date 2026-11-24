@@ -1,0 +1,78 @@
+{
+  "uid": "01a20a95-3b23-7204-86ce-22fbf202b181",
+  "id": "honda/s2000",
+  "make": {
+    "id": "honda",
+    "name": "Honda",
+    "external": [
+      { "system": "wikidata", "id": "Q9584", "scope": "make" }
+    ]
+  },
+  "name": "S2000",
+  "names": { "en": "S2000", "es": "S2000", "ja": "S2000" },
+  "external": [
+    { "system": "wikidata", "id": "Q913796", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "base",
+      "name": "Base",
+      "names": { "en": "Base", "es": "Base", "ja": "ベース" },
+      "generations": [
+        {
+          "id": "ap1",
+          "uid": "01a20a95-3b3c-7f70-a83f-31dd3f1e59bf",
+          "name": "AP1",
+          "names": { "en": "AP1", "es": "AP1", "ja": "AP1" },
+          "years": { "from": 1999, "to": 2005 }
+        },
+        {
+          "id": "ap2",
+          "uid": "01a20a95-3b56-792b-926c-648905a90b13",
+          "name": "AP2",
+          "names": { "en": "AP2", "es": "AP2", "ja": "AP2" },
+          "years": { "from": 2005, "to": 2009 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "honda-jp-archive-s2000",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., Honda car archive (Japan): S2000 sales periods",
+      "url": "https://www.honda.co.jp/auto-archive/s2000/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Sales periods in Japan, used for the years of the generations: 1999-05 to 2001-08, 2001-09 to 2003-09 and 2003-10 to 2005-10 (AP1), 2005-11 to 2007-09 and 2007-10 to 2009-06 (AP2)."
+    },
+    {
+      "id": "honda-jp-s2000-spec-2001",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., Honda car archive (Japan): S2000 specifications, 2001-09 to 2003-09",
+      "url": "https://www.honda.co.jp/auto-archive/s2000/2001/shogen.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Type designation ELA-AP1 with the F20C engine; the specification page of 2003-10 to 2005-10 gives ABA-AP1, the same chassis code."
+    },
+    {
+      "id": "honda-jp-s2000-spec-2005",
+      "method": "official",
+      "source": "Honda Motor Co., Ltd., Honda car archive (Japan): S2000 specifications, 2005-11 to 2007-09",
+      "url": "https://www.honda.co.jp/auto-archive/s2000/2007/shogen.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Type designation ABA-AP2 with the F22C engine from November 2005: Honda gives the car a new chassis code, so it is a separate generation. The 2007-10 to 2009-06 specifications keep ABA-AP2."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Honda (Q9584), Honda S2000 (Q913796)",
+      "url": "https://www.wikidata.org/wiki/Q913796",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model."
+    }
+  ]
+}

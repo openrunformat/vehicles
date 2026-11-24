@@ -1,0 +1,69 @@
+{
+  "uid": "01a20a95-39a6-7362-b39d-4031d5015203",
+  "id": "audi/rs-3",
+  "make": {
+    "id": "audi",
+    "name": "Audi",
+    "external": [
+      { "system": "wikidata", "id": "Q23317", "scope": "make" }
+    ]
+  },
+  "name": "RS 3",
+  "names": { "en": "RS 3", "es": "RS 3", "ja": "RS 3" },
+  "external": [
+    { "system": "wikidata", "id": "Q2120055", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "lms",
+      "name": "LMS",
+      "names": { "en": "LMS", "es": "LMS", "ja": "LMS" },
+      "generations": [
+        {
+          "id": "gen1",
+          "uid": "01a20a95-39c0-7257-b0a2-8bd2ca86ff39",
+          "name": "First generation (A3 8V)",
+          "names": { "en": "First generation (A3 8V)", "es": "Primera generación (A3 8V)", "ja": "第1世代 (A3 8V)" },
+          "years": { "from": 2016, "to": 2020 }
+        },
+        {
+          "id": "gen2",
+          "uid": "01a20a95-39da-73b3-a321-8dfd2cda9109",
+          "name": "Second generation (A3 8Y)",
+          "names": { "en": "Second generation (A3 8Y)", "es": "Segunda generación (A3 8Y)", "ja": "第2世代 (A3 8Y)" },
+          "years": { "from": 2021 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "audi-rs3-lms-gen2-2022",
+      "method": "official",
+      "source": "AUDI AG, Audi in the TCR: strong start for the Audi RS 3 LMS gen II (Audi RS 3 LMS 2022 press kit)",
+      "url": "https://www.audi.com/en/audi-rs-3-lms-2022-14824/audi-in-the-tcr-strong-start-for-the-audi-rs-3-lms-gen-ii-14825",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The first generation was introduced in 2016 and 180 were built; the second generation made its debut in February 2021. The first generation ends in 2020, the year before its successor."
+    },
+    {
+      "id": "audi-rs3-lms-2021-presskit",
+      "method": "official",
+      "source": "AUDI AG, Audi MediaCenter press kit: Audi RS 3 LMS (2021)",
+      "url": "https://audi-mediacenter.com/en/presskits/audi-rs-3-lms-2021-13696",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "World premiere of the second-generation RS 3 LMS, the TCR car of Audi Sport customer racing, on 5 February 2021."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Audi AG (Q23317), Audi RS3 (Q2120055), Audi RS 3 LMS (Q47007954), Audi A3 8V (Q758738), Audi A3 8Y (Q86849539)",
+      "url": "https://www.wikidata.org/wiki/Q47007954",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model, and the codes of the A3 generations each RS 3 LMS is based on (8V for the first, 8Y for the second)."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "uid": "01a20a95-38f2-76af-8ffe-3b55e1bd12a9",
+  "id": "toyota/supra",
+  "make": {
+    "id": "toyota",
+    "name": "Toyota",
+    "external": [
+      { "system": "wikidata", "id": "Q53268", "scope": "make" }
+    ]
+  },
+  "name": "Supra",
+  "names": { "en": "Supra", "es": "Supra", "ja": "スープラ" },
+  "external": [
+    { "system": "wikidata", "id": "Q647404", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "base",
+      "name": "Base",
+      "names": { "en": "Base", "es": "Base", "ja": "ベース" },
+      "generations": [
+        {
+          "id": "a90",
+          "uid": "01a20a95-390b-7a81-8255-6e5dc3fa10ea",
+          "name": "A90",
+          "names": { "en": "A90 (GR Supra)", "es": "A90 (GR Supra)", "ja": "A90 (GRスープラ)" },
+          "years": { "from": 2019, "to": 2026 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "toyota-supra-premiere-2019",
+      "method": "official",
+      "source": "Toyota Motor Corporation, Toyota Premieres New Supra at Detroit Auto Show (news release, 14 January 2019)",
+      "url": "https://global.toyota/en/newsroom/toyota/26144480.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Presentation of the fifth Supra, sold as the GR Supra outside Japan."
+    },
+    {
+      "id": "toyota-supra-launch-2019",
+      "method": "official",
+      "source": "Toyota Motor Corporation, Toyota Rolls Out New Supra (news release, 17 May 2019)",
+      "url": "https://global.toyota/en/newsroom/toyota/28110994.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Start of the generation: on sale in Japan from 17 May 2019; the first global model of the GR sports car series."
+    },
+    {
+      "id": "toyota-jp-supra-spec-2020",
+      "method": "official",
+      "source": "Toyota Motor Corporation, Supra main specifications (Japan, April 2020)",
+      "url": "https://toyota.jp/pages/contents/carlineup/archive/supra/2020-04/pdf/supra_main_s_202004.pdf",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Type designations 3BA-DB02, 3BA-DB22 and 3BA-DB82 (by engine)."
+    },
+    {
+      "id": "toyota-jp-supra-spec-2025",
+      "method": "official",
+      "source": "Toyota Motor Corporation, Supra main specifications (Japan, March 2025)",
+      "url": "https://toyota.jp/pages/contents/supra/002_p_001/pdf/supra_spec_202503.pdf",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Type designations 3BA-DB06, 3BA-DB26 and 3BA-DB86 after the updates: the DB family continues, with no new generation name."
+    },
+    {
+      "id": "toyota-supra-a90-final-2025",
+      "method": "official",
+      "source": "Toyota Motor Corporation, TGR Launches Partially Upgraded Supra RZ Grade and Special-edition Supra A90 Final Edition in Japan (news release, March 2025)",
+      "url": "https://global.toyota/en/newsroom/toyota/42475735.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Toyota names this generation A90 (A90 Final Edition). The partial upgrades of the generation (2020, 2022, 2025) stay in it."
+    },
+    {
+      "id": "carscoops-supra-end-2026",
+      "method": "published",
+      "source": "Carscoops, Toyota Just Put A Date On The Supra's Goodbye (October 2025)",
+      "url": "https://www.carscoops.com/2025/10/toyota-confirms-when-the-gr-supra-will-leave-production-for-good/",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Reports Toyota's announcement on its Japanese website that production of the Supra ends in March 2026: the last year of the generation is 2026."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Toyota (Q53268), Toyota Supra (Q647404), Toyota Supra (J29/DB) (Q62032729)",
+      "url": "https://www.wikidata.org/wiki/Q647404",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model; the fifth generation has its own item, not linked here."
+    }
+  ]
+}

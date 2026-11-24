@@ -1,0 +1,53 @@
+{
+  "uid": "01a20a95-3b73-79d3-bd5f-c3f2c21bf0d6",
+  "id": "bmw/3-series",
+  "make": {
+    "id": "bmw",
+    "name": "BMW",
+    "external": [
+      { "system": "wikidata", "id": "Q26678", "scope": "make" }
+    ]
+  },
+  "name": "3 Series",
+  "names": { "en": "3 Series", "es": "Serie 3", "ja": "3シリーズ" },
+  "external": [
+    { "system": "wikidata", "id": "Q466066", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "base",
+      "name": "Base",
+      "names": { "en": "Base", "es": "Base", "ja": "ベース" },
+      "generations": [
+        {
+          "id": "e36",
+          "uid": "01a20a95-3b8e-71ab-9087-649be6d56618",
+          "name": "E36",
+          "names": { "en": "E36", "es": "E36", "ja": "E36" },
+          "years": { "from": 1990, "to": 1998 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "bmw-3-series-50-years",
+      "method": "official",
+      "source": "BMW Group, 50 years of the BMW 3 Series (press kit, BMW Group PressClub)",
+      "url": "https://newsroom.bmwgroup.com/global/50-years-of-the-bmw-3-series",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The third generation of the 3 Series, model range E36, production 1990-1998."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: BMW (Q26678), BMW 3 Series (Q466066), BMW 3 Series, third generation (Q608824, also known as BMW E36)",
+      "url": "https://www.wikidata.org/wiki/Q608824",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model."
+    }
+  ]
+}

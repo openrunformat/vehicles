@@ -1,0 +1,71 @@
+{
+  "uid": "01a20a95-38bf-7f69-9b9d-a32aa3fa97ba",
+  "id": "toyota/corolla",
+  "make": {
+    "id": "toyota",
+    "name": "Toyota",
+    "external": [
+      { "system": "wikidata", "id": "Q53268", "scope": "make" }
+    ]
+  },
+  "name": "Corolla",
+  "names": { "en": "Corolla", "es": "Corolla", "ja": "カローラ" },
+  "external": [
+    { "system": "wikidata", "id": "Q243543", "scope": "model" }
+  ],
+  "variants": [
+    {
+      "id": "gr",
+      "name": "GR",
+      "names": { "en": "GR", "es": "GR", "ja": "GR" },
+      "generations": [
+        {
+          "id": "gzea14h",
+          "uid": "01a20a95-38d8-767f-867f-868878859186",
+          "name": "GZEA14H",
+          "names": { "en": "GZEA14H", "es": "GZEA14H", "ja": "GZEA14H" },
+          "years": { "from": 2022 }
+        }
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "id": "toyota-gr-corolla-premiere-2022",
+      "method": "official",
+      "source": "Toyota Motor Corporation, TOYOTA GAZOO Racing Premieres GR Corolla (news release, 1 April 2022)",
+      "url": "https://global.toyota/en/newsroom/toyota/37061854.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "The GR Corolla is the TOYOTA GAZOO Racing version of the Corolla hatchback; presented on 31 March 2022."
+    },
+    {
+      "id": "toyota-gr-corolla-launch-2022",
+      "method": "official",
+      "source": "Toyota Motor Corporation, TOYOTA GAZOO Racing Launches GR Corolla Sales Efforts with Lotteries in Japan (news release, 2 December 2022)",
+      "url": "https://global.toyota/en/newsroom/toyota/38317830.html",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Start of the generation in Japan."
+    },
+    {
+      "id": "toyota-jp-gr-corolla-spec-2025",
+      "method": "official",
+      "source": "Toyota Motor Corporation, GR Corolla main specifications (Japan, February 2025)",
+      "url": "https://toyota.jp/pages/contents/grcorolla/001_p_004/pdf/grcorolla_spec_202502.pdf",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "Type designation 4BA-GZEA14H, also after the 2025 update that added an eight-speed automatic; the update stays in the same generation."
+    },
+    {
+      "id": "wikidata",
+      "method": "published",
+      "source": "Wikidata: Toyota (Q53268), Toyota Corolla (Q243543), Toyota GR Corolla (Q111445944)",
+      "url": "https://www.wikidata.org/wiki/Q111445944",
+      "licence": "CC0-1.0",
+      "contributor": "Open Run Format maintainers",
+      "date": "2026-11-23",
+      "notes": "External ids of the make and the model; the GR Corolla item describes it as a variant of the Corolla."
+    }
+  ]
+}
